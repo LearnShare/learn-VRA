@@ -17,18 +17,18 @@
 
 ## 库和框架
 
-+ vue-cli: 4.5.13
++ @vue/cli: 4.5.13
 + Vue: 3.*
 + create-react-app: 4.0.3
 + React: 17.*
-+ angular-cli: 12.1.4
++ @angular/cli: 12.1.4
 + Angular: 12.*
 
 ## 其他
 
 + SCSS + dart-sass
 
-## 相关内容
+## 继续阅读
 
 + 上一节: 无
-+ 下一节: [hello-world](../hello-world/readme.md)
++ 下一节: [hello-world](./hello-world/readme.md)
