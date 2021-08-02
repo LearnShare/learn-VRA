@@ -1,7 +1,7 @@
 # vra-react 添加 ESLint + Airbnb
 
 + <https://eslint.org/>
-+
++ <https://medium.com/@pppped/extend-create-react-app-with-airbnbs-eslint-config-prettier-flow-and-react-testing-library-96627e9a9672>
 
 ## 全局安装 ESLint
 
@@ -138,9 +138,7 @@ src\app.js
   Line 7:7:    'React' must be in scope when using JSX                      react/react-in-jsx-scope
   Line 8:9:    'React' must be in scope when using JSX                      react/react-in-jsx-scope
   Line 9:9:    'React' must be in scope when using JSX                      react/react-in-jsx-scope
-  Line 10:16:  `code` must be placed on a new line                          react/jsx-one-expression-per-line
   Line 10:16:  'React' must be in scope when using JSX                      react/react-in-jsx-scope
-  Line 10:39:  ` and save to reload.        ` must be placed on a new line  react/jsx-one-expression-per-line
   Line 12:9:   'React' must be in scope when using JSX                      react/react-in-jsx-scope
 
 src\index.js
