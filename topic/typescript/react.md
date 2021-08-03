@@ -14,7 +14,7 @@ create-react-app vra-react --template typescript
 
 ## 添加 ESLint + Airbnb 的补充
 
-1. 参考 [ESLint + Airbnb](../hello-world/vue-react-eslint.md) 安装和初始化 ESLint
+1. 参考 [ESLint + Airbnb](../hello-world/vra-react-eslint.md) 安装和初始化 ESLint
 2. 安装 eslint-config-airbnb-typescript
   ```bash
   npm install --save-dev eslint-config-airbnb-typescript
