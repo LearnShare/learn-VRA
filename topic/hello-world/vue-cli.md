@@ -1,6 +1,7 @@
 # Vue CLI
 
-<https://cli.vuejs.org/> 和 <https://cli.vuejs.org/zh/>
++ <https://cli.vuejs.org/>
++ <https://cli.vuejs.org/zh/>
 
 ## 关于 @vue/cli
 

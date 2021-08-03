@@ -34,7 +34,7 @@ vra-react/
 
 ## 代码风格调整
 
-为了符合 [代码风格](development-environment.md#代码风格) 的要求，进行如下调整：
+为了符合 [代码风格](../development-environment.md#代码风格) 的要求，进行如下调整：
 
 1. 修改文件名及相关代码
   ```

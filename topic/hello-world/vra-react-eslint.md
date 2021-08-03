@@ -102,11 +102,11 @@ npm install --save-dev eslint-config-airbnb
 "extends": [
   "eslint:recommended",
   "plugin:react/recommended",
-  "airbnb"
+  "airbnb" // 添加这一行
 ],
 
 "rules": {
-  "react/jsx-filename-extension": [
+  "react/jsx-filename-extension": [ // 添加这一部分
     1,
     {
       "extensions": [".js", ".jsx"]

@@ -3,7 +3,7 @@
 本节概览：
 
 + 了解和安装 cli
-+ 创建项目
++ 创建和配置项目
 + 认识项目结构
 + 编写最小的 Hello World
 + 运行和查看
@@ -22,6 +22,9 @@
   + [Hello World](./react-hello-world.md)
 + Angular
   + [Angular CLI](./angular-cli.md)
+  + [项目结构](./vra-angular.md)
+    + [ESLint + Airbnb](./vra-angular-eslint.md)
+  + [Hello World](./angular-hello-world.md)
 
 ## 继续阅读
 
