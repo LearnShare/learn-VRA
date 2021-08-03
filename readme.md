@@ -26,4 +26,4 @@ Why not.
 
 - [开发环境](./topic/development-environment.md)
 - [hello-world](./topic/hello-world/readme.md)
-+ [使用 TypeScript 的 Vue/React 项目](./topic/typescript/readme.md)
+- [使用 TypeScript 的 Vue/React 项目](./topic/typescript/readme.md)
