@@ -65,4 +65,4 @@ Github: <https://github.com/LearnShare/vra-angular/tree/01.hello-world>
 ## 继续阅读
 
 + 上一节: [项目结构](./vra-angular.md)
-+ 下一节: 无
++ 下一节: [TypeScript](../typescript/readme.md)

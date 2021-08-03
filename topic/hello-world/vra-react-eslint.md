@@ -20,7 +20,7 @@ eslint -v
 
 ## 初始化配置文件
 
-在 vra-react 目录中执行以下命令，进入i昂护士创建流程：
+在 vra-react 目录中执行以下命令，进入交互式创建流程：
 
 ```bash
 eslint --init
