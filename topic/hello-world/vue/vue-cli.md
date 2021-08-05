@@ -42,9 +42,6 @@ vue create project-name
 # 添加插件和功能
 vue add eslint
 
-# 快速开发环境
-vue serve index.vue
-
 # 检查需要升级的插件
 vue outdated
 
@@ -121,6 +118,35 @@ npm run serve
 ```
 
 在浏览器中访问 <http://localhost:8080/> 即可。
+
+## 项目配置文件
+
+参考 [Vue CLI: 配置参考](https://cli.vuejs.org/zh/config/)
+
+在项目根目录创建 `vue.config.js` 文件，并在其中编写配置代码。
+
+下面的例子给出了一些常用的配置：
+
+```js
+const path = require('path');
+
+function resolve(dir) {
+  return path.join(__dirname, dir);
+}
+
+module.exports = {
+  configureWebpack: { // 配置 Webpack
+    resolve: {
+      alias: {
+        comp: resolve('src/components'),
+      },
+    },
+  },
+  devServer: {        // 配置 Webpack dev-server
+    proxy: 'http://testapi.server.com',
+  },
+};
+```
 
 ## 继续阅读
 

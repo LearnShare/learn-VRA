@@ -4,7 +4,9 @@
 
 ## 本节的子主题
 
-+ [Vue 应用](./vue/vue-app.md)
++ Vue
+  + [Vue 应用](./vue/vue-app.md)
+  + [路径别名](./vue/vue-path.md)
 + [React 应用](./react/react-app.md)
 + [Angular 应用](./angular/angular-app.md)
 
