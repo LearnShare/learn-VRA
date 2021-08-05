@@ -82,5 +82,5 @@ npm start
 
 ## 继续阅读
 
-+ 上一节: [hello-world](./readme.md)
++ 上一节: [hello-world](../readme.md)
 + 下一节: [项目结构](./vra-angular.md)

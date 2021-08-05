@@ -64,4 +64,4 @@ Github: <https://github.com/LearnShare/vra-react/tree/01.hello-world>
 ## 继续阅读
 
 + 上一节: [项目结构](./vra-react.md)
-+ 下一节: [Angular CLI](./angular-cli.md)
++ 下一节: [Angular CLI](../angular/angular-cli.md)

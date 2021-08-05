@@ -61,4 +61,4 @@ Github: <https://github.com/LearnShare/vra-vue/tree/01.hello-world>
 ## 继续阅读
 
 + 上一节: [项目结构](./vra-vue.md)
-+ 下一节: [Create React App](./create-react-app.md)
++ 下一节: [Create React App](../react/create-react-app.md)
