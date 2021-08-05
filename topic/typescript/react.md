@@ -59,7 +59,7 @@ npm start
 
 Github: <https://github.com/LearnShare/vra-react/tree/02.typescript>
 
-在线预览:
+在线预览: <https://codesandbox.io/s/vra-react-02typescript-8c77j>
 
 ## 继续阅读
 

@@ -4,10 +4,10 @@ Why not.
 
 ## 目标
 
-- 同时学习 Vue、React 和 Angular
-- 同步学习三者相同/相关的知识
-- 融合以往的项目经验
-- 尽量涉及更多、更广的内容
++ 同时学习 Vue、React 和 Angular
++ 同步学习三者相同/相关的知识
++ 融合以往的项目经验
++ 尽量涉及更多、更广的内容
 
 ## 成果记录
 
@@ -24,6 +24,8 @@ Why not.
 
 ## 学习主题
 
-- [开发环境](./topic/development-environment.md)
-- [hello-world](./topic/hello-world/readme.md)
-- [使用 TypeScript 的 Vue/React 项目](./topic/typescript/readme.md)
++ [开发环境](./topic/development-environment.md)
++ [hello-world](./topic/hello-world/readme.md)
++ [使用 TypeScript 的 Vue/React 项目](./topic/typescript/readme.md)
++ [应用配置和启动](./topic/app/readme.md)
++ [组件](./topic/component/readme.md)
