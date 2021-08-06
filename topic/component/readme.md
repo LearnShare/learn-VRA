@@ -26,8 +26,8 @@
       + [属性绑定](./vue/bind.md)
       + [显示或隐藏元素](./vue/show-if-else.md)
       + [循环](./vue/for.md)
-      + 事件
-      + 双向绑定
+      + [事件](./vue/event.md)
+      + [表单和双向绑定](./vue/form.md)
   + JSX
   + 数据
     + data
@@ -37,4 +37,9 @@
     + 方法
     + watch
     + 生命周期
+  + 跨组件数据传递
+    + props 和 attr
+    + 自定义事件
+    + Provide/Inject
+    + Vuex
   + 样式

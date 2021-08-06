@@ -58,3 +58,14 @@ export default {
 与 JavaScript 中的 if/else-if/else 一致，但它们控制元素是否渲染到 HTML 中。
 
 当需要通过隐藏元素来控制用户的操作权限时，建议使用 v-if/v-else-if/v-else 从 HTML 中完全移除相应元素。
+
+## 最终代码
+
+Github: <https://github.com/LearnShare/vra-vue/tree/03.template>
+
+在线预览: <https://codesandbox.io/s/vra-vue-03-template-lqm4l>
+
+## 继续阅读
+
++ 上一节:
++ 下一节:

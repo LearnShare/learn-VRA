@@ -53,3 +53,14 @@ export default {
 但是无法将包含 HTML 代码的文本直接作为代码插入，它们最终也会输出为文本（`<>` 会被转换为字符实体）。
 
 可以使用 `v-html` 指令将 HTML 代码插入到元素中，但需要特别注意这么做是否安全。
+
+## 最终代码
+
+Github: <https://github.com/LearnShare/vra-vue/tree/03.template>
+
+在线预览: <https://codesandbox.io/s/vra-vue-03-template-lqm4l>
+
+## 继续阅读
+
++ 上一节:
++ 下一节:

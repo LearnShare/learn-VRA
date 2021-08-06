@@ -95,3 +95,14 @@ v-bind:[key]="value"
 
 + 如果绑定的值为 `null` 或 `undefined`，该属性将不会出现在渲染结果中。
 + 当在组件上绑定 class 属性时，绑定的值会和组件根元素的 class 属性合并。
+
+## 最终代码
+
+Github: <https://github.com/LearnShare/vra-vue/tree/03.template>
+
+在线预览: <https://codesandbox.io/s/vra-vue-03-template-lqm4l>
+
+## 继续阅读
+
++ 上一节:
++ 下一节:

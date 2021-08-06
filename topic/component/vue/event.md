@@ -1,0 +1,121 @@
+# 事件
+
+Vue 提供了处理事件的 `v-on` 指令，以及创建和触发自定义事件的能力。
+
+```vue
+
+```
+
+## v-on
+
+`v-on` 指令用于监听 DOM 事件或组件自定义事件。
+
+类似于 `v-bind`，`v-on` 之后需要指定监听的事件名称，属性值：
+
+```js
+// 直接执行表达式
+v-on:click="count += 1"
+
+// 调用事件处理方法
+v-on:input="eventListener"
+
+// 简写为
+@click="count += 1"
+@input="eventListener"
+```
+
+## 事件处理方法
+
+事件处理方法是定义在组件 methods 属性内的方法。
+
+如果未在模板中指定参数，事件处理方法可以没有参数，或者一个默认参数（$event）。
+
+也可以在模板中指定传给事件处理方法的参数，它们可以是：
+
++ `$event`: 代表了原始的 DOM 事件
++ 任意值
++ 任意变量
+
+```vue
+<template>
+  <h1>Event</h1>
+  <div>
+    <span>count: {{ count }}&nbsp;</span>
+    <button
+        v-on:click="count += 1">Add 1</button>
+  </div>
+  <div>
+    <p>input value: {{ inputValue }}</p>
+    <input
+        type="text"
+        @input="textChanged">
+  </div>
+  <ul>
+    <li
+        v-for="(item, index) in list"
+        :key="index"
+        @click="listItemOnClick($event, 'click', index)">{{ item }}</li>
+  </ul>
+</template>
+
+<script>
+export default {
+  name: 'DemoEvent',
+  data() {
+    return {
+      count: 0,
+      inputValue: '',
+      list: [
+        'A',
+        'B',
+        'C',
+      ],
+    };
+  },
+  methods: {
+    textChanged(event) {
+      this.inputValue = event.target.value;
+    },
+    listItemOnClick(event, type, index) {
+      console.log(event.target, type, index);
+    },
+  },
+};
+</script>
+```
+
+## 事件修饰符
+
+事件修饰符为事件绑定提供了更多扩展功能或限定条件：
+
+```vue
+<!-- 阻止默认行为 -->
+<button
+    type="submit
+    @click.prevent="submitForm">Submit</button>
+<!-- 限定触发的按键 -->
+<input
+    type="text"
+    @keydown.enter="addTodo" />
+```
+
+参考：
+
++ [Vue Guide: 事件修饰符](https://v3.cn.vuejs.org/guide/events.html#事件修饰符)
+
+## 自定义事件
+
+在模板中，`v-on` 对 HTML 元素和自定义组件的语法和功能是基本一致的。
+
+参考 [跨组件数据传递 - 自定义事件]()。
+
+## 最终代码
+
+Github: <https://github.com/LearnShare/vra-vue/tree/04.event>
+
+在线预览: <https://codesandbox.io/s/vra-vue-04-event-20q67>
+
+## 继续阅读
+
++ 上一节:
++ 下一节:
