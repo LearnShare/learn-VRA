@@ -206,8 +206,8 @@ app.mount('#app');
 
 ```vue
 <template>
-  <HelloWorld msg="HelloWorld"/>
-  <hello-world msg="hello-world"/>
+  <HelloWorld msg="HelloWorld" />
+  <hello-world msg="hello-world" />
   <ni-hao msg="ni-hao"></ni-hao>
 </template>
 
@@ -223,6 +223,14 @@ export default {
 };
 </script>
 ```
+
+对于不需要包含内容的组件，可以不写结束标签，但开始标签必须包含 `/>` 作为结束：
+
+```vue
+<hello-world msg="hello-world" />
+```
+
+对于需要包含文本内容或其他标签/组件的方式，参考 [<slot>]。
 
 其中，使用不同名称注册的组件在模板中使用时有一些区别：
 
