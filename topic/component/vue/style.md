@@ -1,0 +1,291 @@
+# 样式
+
+## 内联样式
+
+在 [属性绑定](./bind.md) 中，我们已经了解了绑定元素 `style` 属性的方法：
+
+```vue
+<template>
+  <h2>1. inline style</h2>
+  <p
+      :style="{
+        fontSize: '16px',
+      }">inline style object</p>
+  <p
+      :style="styleObject">style object from data</p>
+  <p
+      :style="[styleA, styleB]">multiple style object</p>
+</template>
+
+<script>
+export default {
+  name: 'DemoStyle',
+  data() {
+    return {
+      // 1. inline style
+      styleObject: {
+        fontSize: '16px',
+        color: '#AAF',
+      },
+      styleA: {
+        fontSize: '14px',
+      },
+      styleB: {
+        color: '#FAA',
+      },
+    };
+  },
+};
+</script>
+```
+
+渲染出的 HTML：
+
+```html
+<h2>1. inline style</h2>
+<p style="font-size: 16px;">inline style object</p>
+<p style="font-size: 16px; color: rgb(170, 170, 255);">style object from data</p>
+<p style="font-size: 14px; color: rgb(255, 170, 170);">multiple style object</p>
+```
+
+## 使用 class 关联样式
+
+也可以使用 `class` 属性关联样式。
+
+src/components/demo-style.vue:
+
+```vue
+<template>
+  <h2>2. style with class</h2>
+  <p class="error">error message</p>
+  <p
+      :class="infoStyle">warning message</p>
+  <button class="btn btn-primary">Bootstrap</button>
+</template>
+
+<script>
+export default {
+  name: 'DemoStyle',
+  data() {
+    return {
+      // 2. style with class
+      infoStyle: {
+        info: true,
+        warning: true,
+      },
+    };
+  },
+};
+</script>
+
+<style>
+.error {
+  color: red;
+}
+</style>
+```
+
+main.js:
+
+```js
+import { createApp } from 'vue';
+
+import 'bootstrap/dist/css/bootstrap.css';
+import './css/style.scss';
+
+import App from './app.vue';
+
+createApp(App).mount('#app');
+```
+
+样式的来源可以是：
+
++ 单文件组件中定义的样式
++ 通过 `import 'style.css'` 引入的全局样式或外部样式
+
+## 使用其他语言
+
+Vue CLI 创建的项目稍加配置，即可支持 CSS 预处理器，参考 [Vue CLI Guide: 预处理器](https://cli.vuejs.org/zh/guide/css.html#预处理器)。
+
+可以在 JS 中直接引入样式文件：
+
+```js
+import 'style.scss';
+```
+
+也可以在单文件组件的 `<style>` 标签内标注所使用的预处理器类型：
+
+```vue
+<style
+    lang="scss">
+// SCSS code
+</style>
+```
+
+## scoped - 组件作用域
+
+默认情况下，单文件组件内的样式是全局的，这会对组件外产生样式污染。
+
+src/components/demo-style.vue:
+
+```vue
+<style>
+.error {
+  color: red;
+}
+</style>
+```
+
+编译后的样式：
+
+```html
+<style type="text/css">
+.error {
+  color: red;
+}
+</style>
+```
+
+为了避免不必要的全局样式出现，可以使用 `scoped` 属性将样式的作用域限制到组件内：
+
+```vue
+<p class="error">error message</p>
+
+<style
+    scoped>
+.error {
+  color: red;
+}
+</style>
+```
+
+编译后的代码：
+
+```html
+<style type="text/css">
+.error[data-v-77894bd7] {
+  color: red;
+}
+</style>
+
+<p class="error" data-v-77894bd7="">error message</p>
+```
+
+Vue Loader 会对这类样式进行特殊处理，参考 [Vue Loader Guide: Scoped CSS](https://vue-loader.vuejs.org/zh/guide/scoped-css.html)
+
+### 深度匹配
+
+有时候会需要在父组件中覆盖子组件的样式，但如果父组件使用了局部作用域的样式，其中的样式就无法应用到子组件了。
+
+深度匹配 `>>>` 可以帮助我们实现这一需求：
+
+```vue
+// 1. 默认写法
+<style
+    lang="scss"
+    scoped>
+.parent {
+  color: #333;
+
+  .children {
+    color: blue;
+  }
+}
+</style>
+
+// 2. 深度匹配
+<style
+    lang="scss"
+    scoped>
+.parent::v-deep {
+  color: #333;
+
+  .children {
+    color: blue;
+  }
+}
+</style>
+```
+
+编译后的 CSS：
+
+```css
+/* 默认写法 */
+.parent[data-v-77894bd7] {
+  color: #333;
+}
+.parent .children[data-v-77894bd7] {
+  color: blue;
+}
+
+/* 深度匹配 */
+.parent[data-v-77894bd7] {
+  color: #333;
+}
+.parent[data-v-77894bd7] .children {
+  color: blue;
+}
+```
+
+SCSS/SASS 中无法解析 `>>>`，可以使用 `/deep/` 或 `::v-deep`。
+
+## CSS Modules
+
+[CSS Modules](https://github.com/css-modules/css-modules) 是一种流行的 CSS 使用方式。
+
+### 在单文件组件中声明和使用
+
+```vue
+<template>
+  <h2>3. css modules</h2>
+  <p
+      :class="$style.mark">mark</p>
+</template>
+
+<script>
+export default {
+  name: 'DemoStyle',
+};
+</script>
+<style
+    module>
+.mark {
+  font-weight: bold;
+  background-color: #FFC;
+}
+</style>
+```
+
+### 引入外部 CSS 模块
+
+```vue
+<template>
+  <p
+      :class="darkStyles.dark">dark</p>
+</template>
+
+<script>
+import darkStyles from '@/css/dark.module.scss';
+
+export default {
+  name: 'DemoStyle',
+  data() {
+    return {
+      // 3. css modules
+      darkStyles,
+    };
+  },
+};
+</script>
+```
+
+## 最终代码
+
+Github: <>
+
+在线预览: <>
+
+## 继续阅读
+
++ 上一节:
++ 下一节:
