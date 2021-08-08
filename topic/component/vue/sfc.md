@@ -66,7 +66,7 @@ export default class HelloWorld extends Vue {
 
 ## <style>
 
-关于样式部分，参考 [样式]。
+关于样式部分，参考 [样式](./style.md)。
 
 ## 分离 JavaScript 和 CSS
 

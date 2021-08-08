@@ -3,14 +3,32 @@
 Vue 提供了处理事件的 `v-on` 指令，以及创建和触发自定义事件的能力。
 
 ```vue
+<template>
+  <h1>Event</h1>
+  <div>
+    <span>count: {{ count }}&nbsp;</span>
+    <button
+        v-on:click="count += 1">Add 1</button>
+  </div>
+</template>
 
+<script>
+export default {
+  name: 'DemoEvent',
+  data() {
+    return {
+      count: 0,
+    };
+  },
+};
+</script>
 ```
 
 ## v-on
 
 `v-on` 指令用于监听 DOM 事件或组件自定义事件。
 
-类似于 `v-bind`，`v-on` 之后需要指定监听的事件名称，属性值：
+类似于 `v-bind`，`v-on` 之后需要指定监听的事件名称，属性值可以是表达式、方法名称或方法调用语句：
 
 ```js
 // 直接执行表达式
@@ -18,6 +36,7 @@ v-on:click="count += 1"
 
 // 调用事件处理方法
 v-on:input="eventListener"
+v-on:input="eventListener($event))"
 
 // 简写为
 @click="count += 1"
@@ -40,11 +59,6 @@ v-on:input="eventListener"
 <template>
   <h1>Event</h1>
   <div>
-    <span>count: {{ count }}&nbsp;</span>
-    <button
-        v-on:click="count += 1">Add 1</button>
-  </div>
-  <div>
     <p>input value: {{ inputValue }}</p>
     <input
         type="text"
@@ -63,7 +77,6 @@ export default {
   name: 'DemoEvent',
   data() {
     return {
-      count: 0,
       inputValue: '',
       list: [
         'A',

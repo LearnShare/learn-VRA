@@ -171,7 +171,7 @@ src/components/demo-style.vue:
 <p class="error" data-v-77894bd7="">error message</p>
 ```
 
-Vue Loader 会对这类样式进行特殊处理，参考 [Vue Loader Guide: Scoped CSS](https://vue-loader.vuejs.org/zh/guide/scoped-css.html)
+Vue Loader 会对这类样式进行特殊处理，参考 [Vue Loader Guide: Scoped CSS](https://vue-loader.vuejs.org/zh/guide/scoped-css.html)。
 
 ### 深度匹配
 
@@ -247,6 +247,7 @@ export default {
   name: 'DemoStyle',
 };
 </script>
+
 <style
     module>
 .mark {

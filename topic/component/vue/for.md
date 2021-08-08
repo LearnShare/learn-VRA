@@ -1,6 +1,6 @@
 # 循环
 
-Vue 也增加了用于循环的指令，可以基于数组等数据重复渲染部分模板。
+Vue 也提供了用于循环的指令，可以基于数组等数据重复渲染部分模板。
 
 ```vue
 <template>
@@ -147,7 +147,7 @@ v-for="(value, key, index) in dataObject"
 + 循环的 key
 + 循环的序号
 
-## <template>
+## \<template\>
 
 可以使用 `<template>` 作为 `v-for` 的容器，这样渲染内部的元素和组件，避免了多余的嵌套元素：
 
