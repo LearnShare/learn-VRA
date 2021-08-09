@@ -282,11 +282,11 @@ export default {
 
 ## 最终代码
 
-Github: <>
+Github: <https://github.com/LearnShare/vra-vue/tree/08.style>
 
-在线预览: <>
+在线预览: <https://codesandbox.io/s/vra-vue-08-style-kb1rs>
 
 ## 继续阅读
 
-+ 上一节:
++ 上一节: ref 和 DOM
 + 下一节:

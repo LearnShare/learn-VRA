@@ -83,3 +83,8 @@ export default class HelloWorld extends Vue {
 <style
     src="./hello-world.css"></style>
 ```
+
+## 继续阅读
+
++ 上一节: [创建、注册和使用组件](./component.md)
++ 下一节: [HTML 和插值](./html.md)

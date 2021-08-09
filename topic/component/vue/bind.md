@@ -104,5 +104,5 @@ Github: <https://github.com/LearnShare/vra-vue/tree/03.template>
 
 ## 继续阅读
 
-+ 上一节:
-+ 下一节:
++ 上一节: [HTML 和插值](./html.md)
++ 下一节: [显示或隐藏元素](./show-if-else.md)

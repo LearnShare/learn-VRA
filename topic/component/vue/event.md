@@ -130,5 +130,5 @@ Github: <https://github.com/LearnShare/vra-vue/tree/04.event>
 
 ## 继续阅读
 
-+ 上一节:
-+ 下一节:
++ 上一节: [循环](./for.md)
++ 下一节: [表单和双向绑定](./form.md)

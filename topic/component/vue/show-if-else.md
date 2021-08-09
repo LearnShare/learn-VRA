@@ -67,5 +67,5 @@ Github: <https://github.com/LearnShare/vra-vue/tree/03.template>
 
 ## 继续阅读
 
-+ 上一节:
-+ 下一节:
++ 上一节: [属性绑定](./bind.md)
++ 下一节: [循环](./for.md)

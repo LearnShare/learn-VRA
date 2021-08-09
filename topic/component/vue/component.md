@@ -245,5 +245,5 @@ Github: <https://github.com/LearnShare/vra-vue/tree/06.component>
 
 ## 继续阅读
 
-+ 上一节:
-+ 下一节:
++ 上一节: [组件](../readme.md)
++ 下一节: [单文件组件](./sfc.md)

@@ -28,6 +28,7 @@
       + [事件](./vue/event.md)
       + [表单和双向绑定](./vue/form.md)
     + ref 和 DOM
+  + [样式](./vue/style.md)
   + 数据
     + data
     + props
@@ -48,7 +49,6 @@
     + 状态管理
   + 动态组件
   + 异步组件
-  + [样式](./vue/style.md)
   + 过渡和动画
   + 路由
   + 扩展阅读
