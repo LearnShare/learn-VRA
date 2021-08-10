@@ -288,5 +288,5 @@ Github: <https://github.com/LearnShare/vra-vue/tree/08.style>
 
 ## 继续阅读
 
-+ 上一节: ref 和 DOM
++ 上一节:
 + 下一节:

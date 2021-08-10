@@ -27,7 +27,6 @@
       + [循环](./vue/for.md)
       + [事件](./vue/event.md)
       + [表单和双向绑定](./vue/form.md)
-    + ref 和 DOM
   + [样式](./vue/style.md)
   + 数据
     + data
@@ -37,6 +36,7 @@
     + 方法
     + watch
     + 生命周期
+  + ref 和 DOM
   + 内置特殊组件
     + \<template\>
     + \<slot\>
@@ -62,3 +62,12 @@
     + 服务端渲染
     + 测试
     + 部署
++ React
+  + [创建和使用组件](./react/component.md)
+  + [JSX](./react/jsx.md)
+    + [事件](./react/event.md)
+    + [表单](./react/form.md)
+  + [样式](./react/style.md)
+  + state
+  + props
+  + ref 和 DOM
