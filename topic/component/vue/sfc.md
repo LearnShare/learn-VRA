@@ -1,6 +1,6 @@
 # 单文件组件
 
-单文件组件（single-file components）允许在一处编写模板、样式和 JavaScript 代码：
+单文件组件（single-file components）允许在一处编写模板、样式和脚本代码：
 
 src/components/hello-world.vue:
 
@@ -87,4 +87,4 @@ export default class HelloWorld extends Vue {
 ## 继续阅读
 
 + 上一节: [创建、注册和使用组件](./component.md)
-+ 下一节: [HTML 和插值](./html.md)
++ 下一节: [HTML 和插值](./template/html.md)

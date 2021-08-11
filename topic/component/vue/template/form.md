@@ -171,4 +171,4 @@ Github: <https://github.com/LearnShare/vra-vue/tree/05.form>
 ## 继续阅读
 
 + 上一节: [事件](./event.md)
-+ 下一节: [样式](./style.md)
++ 下一节: [样式](../style.md)

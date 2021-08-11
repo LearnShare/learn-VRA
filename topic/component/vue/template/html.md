@@ -62,5 +62,5 @@ Github: <https://github.com/LearnShare/vra-vue/tree/03.template>
 
 ## 继续阅读
 
-+ 上一节: [单文件组件](./sfc.md)
++ 上一节: [单文件组件](../sfc.md)
 + 下一节: [属性绑定](./bind.md)

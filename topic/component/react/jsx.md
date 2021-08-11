@@ -180,6 +180,33 @@ buttonLabel() {
 }
 ```
 
+在 JSX 中，`null` `undefined` 和 `false` 将不会被渲染：
+
+```jsx
+const data = null;
+
+dataInfo() {
+  if (data
+      && data.length) {
+    return <span>{ data.length }</span>
+  }
+
+  return null;
+}
+
+<p>{
+  data && <span>not empty</span>
+}</p>
+<p>{ list }</p>
+```
+
+将会渲染为：
+
+```html
+<p></p>
+<p></p>
+```
+
 ## 循环
 
 ```jsx
@@ -191,10 +218,22 @@ list: [
 
 <ol>{
   list.map((value) => (
-    <li>{ value }</li>
+    <li
+        key={value}>{ value }</li>
   ))
 }</ol>
 ```
+
+为了有效地跟踪循环中渲染出的每个元素，需要为元素添加 `key` 属性。
+
+key 可以是数字或字符串，它可以来源于：
+
++ 循环的值
++ 值的特殊字段，如 item.id
++ 循环的 key
++ 循环的序号
+
+通常应该避免使用循环序号，因为它可能会随着数组元素的增加、删除或排序发生变化，从而导致无法预料的逻辑错误。
 
 ## 最终代码
 
@@ -204,5 +243,5 @@ Github: <https://github.com/LearnShare/vra-react/tree/04.jsx>
 
 ## 继续阅读
 
-+ 上一节:
-+ 下一节:
++ 上一节: [创建和使用组件](./component.md)
++ 下一节: [事件](./event.md)

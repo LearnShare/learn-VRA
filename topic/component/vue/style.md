@@ -2,7 +2,7 @@
 
 ## 内联样式
 
-在 [属性绑定](./bind.md) 中，我们已经了解了绑定元素 `style` 属性的方法：
+在 [属性绑定](./template/bind.md) 中，我们已经了解了绑定元素 `style` 属性的方法：
 
 ```vue
 <template>
@@ -288,5 +288,5 @@ Github: <https://github.com/LearnShare/vra-vue/tree/08.style>
 
 ## 继续阅读
 
-+ 上一节:
++ 上一节: [表单和双向绑定](./template/form.md)
 + 下一节:

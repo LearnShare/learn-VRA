@@ -20,13 +20,13 @@
   + [创建、注册和使用组件](./vue/component.md)
   + [单文件组件](./vue/sfc.md)
   + 模板
-    + [HTML 和插值](./vue/html.md)
+    + [HTML 和插值](./vue/template/html.md)
     + v-* - 指令
-      + [属性绑定](./vue/bind.md)
-      + [显示或隐藏元素](./vue/show-if-else.md)
-      + [循环](./vue/for.md)
-      + [事件](./vue/event.md)
-      + [表单和双向绑定](./vue/form.md)
+      + [属性绑定](./vue/template/bind.md)
+      + [显示或隐藏元素](./vue/template/show-if-else.md)
+      + [循环](./vue/template/for.md)
+      + [事件](./vue/template/event.md)
+      + [表单和双向绑定](./vue/template/form.md)
   + [样式](./vue/style.md)
   + 数据
     + data
@@ -37,7 +37,7 @@
     + watch
     + 生命周期
   + ref 和 DOM
-  + 内置特殊组件
+  + 特殊组件和模式
     + \<template\>
     + \<slot\>
     + \<teleport\>
@@ -70,4 +70,19 @@
   + [样式](./react/style.md)
   + state
   + props
+  + 生命周期
   + ref 和 DOM
+  + 特殊组件和模式
+    + Suspense 和按需加载
+    + Portals
+    + 错误边界
+  + 跨组件数据传递
+    + props
+    + Context
+    + 状态管理
+  + 路由
+  + 扩展阅读
+    + 编程式的模板
+    + Hook
+    + 服务端渲染
+    + 测试
