@@ -19,6 +19,8 @@ this.state = {
     style={styleObject}>style object from data</p>
 ```
 
+**注意**：`style` 属性并不支持字符串形式的 CSS 代码，如 `font-size: 16px;`。
+
 ## 使用 class 关联样式
 
 ```jsx

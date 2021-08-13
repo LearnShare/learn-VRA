@@ -55,6 +55,8 @@ export default DemoJsx;
 
 建议使用第二种。
 
+>如需注册捕获阶段的事件处理函数，则应为事件名添加 `Capture`。例如，处理捕获阶段的点击事件请使用 `onClickCapture`，而不是 `onClick`。
+
 ## 继续阅读
 
 + 上一节: [JSX](./jsx.md)

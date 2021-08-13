@@ -49,6 +49,10 @@ updateValue = (event) => {
 
 HTML 中的表单元素（如 `<input>`）通常有自己的内部数据和逻辑，可以使用 [ref] 访问 DOM 节点来获取表单数据。
 
+将数据传入表单：
+
++ `defaultValue|defaultChecked` 属性：非响应式的，仅在初始化元素时生效
+
 ## 表单处理逻辑
 
 ```jsx

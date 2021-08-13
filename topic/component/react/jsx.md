@@ -150,8 +150,16 @@ JSX 中元素或组件的属性也可以使用任意表达式：
 
 属性名有一些不同：
 
-+ `className`: 为了避免和类声明关键词冲突，class 属性需要写成 `className`
-+ `tabIndex`: 部分属性名需要写成驼峰式的名称，如 tabindex => `tabIndex`、onclick => `onClick`
++ 为了避免和类声明关键词冲突，部分属性名称不同：
+  + for => `htmlFor`
+  + class => `className`
++ 部分属性名需要写成驼峰式的名称
+  + tabindex => `tabIndex`
+  + onclick => `onClick`
+  + readonly => `readOnly`
+  + 等
+
+`aria-*` 和 `data-*` 的格式保持不变。
 
 ## 显示或隐藏元素
 
@@ -234,6 +242,19 @@ key 可以是数字或字符串，它可以来源于：
 + 循环的序号
 
 通常应该避免使用循环序号，因为它可能会随着数组元素的增加、删除或排序发生变化，从而导致无法预料的逻辑错误。
+
+## 渲染 HTML 内容
+
+可以使用 `dangerouslySetInnerHTML` 属性向 JSX 元素中插入 HTML 内容：
+
+```jsx
+htmlContent: {
+  __html: '<p>it's dangerous</p>',
+}
+
+<div
+    dangerouslySetInnerHTML={htmlContent}></div>
+```
 
 ## 最终代码
 

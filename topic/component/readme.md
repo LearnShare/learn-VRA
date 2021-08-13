@@ -59,6 +59,7 @@
     + 自定义指令
     + 插件
     + i18n
+    + Web Components
     + 服务端渲染
     + 测试
     + 部署
@@ -74,8 +75,11 @@
   + ref 和 DOM
   + 特殊组件和模式
     + Suspense 和按需加载
-    + Portals
+    + Portal
     + 错误边界
+    + 高阶组件
+    + Profiler
+    + StrictMode
   + 跨组件数据传递
     + props
     + Context
@@ -84,5 +88,6 @@
   + 扩展阅读
     + 编程式的模板
     + Hook
+    + Web Components
     + 服务端渲染
     + 测试
