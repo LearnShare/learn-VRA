@@ -95,12 +95,17 @@
   + [创建、注册和使用组件](./angular/component.md)
   + 模板
     + [HTML 和插值](./angular/template/html.md)
-    + 属性绑定
-    + 显示或隐藏元素
-    + 循环
-    + 事件
-    + 表单
+    + [属性绑定](./angular/template/bind.md)
+    + [显示或隐藏元素](./angular/template/if-switch.md)
+    + [循环](./angular/template/for.md)
+    + [事件](./angular/template/event.md)
+    + [表单](./angular/template/form.md)
   + 样式
+  + 生命周期
+  + ref 和 DOM
+  + 特殊组件和模式
+    + ng-container
+    + ng-template
   + 模块
   + 依赖注入
   + 指令
