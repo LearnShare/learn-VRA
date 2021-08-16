@@ -94,7 +94,7 @@
 + Angular
   + [创建、注册和使用组件](./angular/component.md)
   + 模板
-    + HTML 和插值
+    + [HTML 和插值](./angular/template/html.md)
     + 属性绑定
     + 显示或隐藏元素
     + 循环
@@ -103,11 +103,13 @@
   + 样式
   + 模块
   + 依赖注入
+  + 指令
   + 服务
   + 管道
   + 跨组件数据传递
     + @Input
     + @Output
+    + 内容投影
     + 状态管理
   + 路由
   + 网络请求

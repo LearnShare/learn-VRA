@@ -56,7 +56,7 @@ ng generate component components/toggle-button
   template: '', // 字符串形式的模板声明
   templateUrl: '', // 独立的模板文件
 
-  // 组件样式（二选一，可选的）
+  // 组件样式（可同时存在，可选的）
   styles: [], // 字符串形式的样式声明
   styleUrls: [], // 独立的样式文件
 
