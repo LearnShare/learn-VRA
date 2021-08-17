@@ -7,7 +7,6 @@
 `*ngIf=""` 指令用于控制是否将元素/组件渲染到 HTML 中：
 
 ```html
-<h2>3. if/switch</h2>
 <div>
   <span
       *ngIf="showItem">true</span>
@@ -42,7 +41,17 @@ export class DemoTemplateComponent {
 
 当其属性值为非真值（`false` `null` `undefined` `''` `0` 等）时，所在元素将不会出现在 HTML 中。
 
-## [ngSwitch=""] | *ngSwitchCase
+**提示**：类似于下面的注释信息仅出现在开发模式中，编译后的版本会省略详情：
+
+```html
+<!--bindings={
+  "ng-reflect-ng-if": "true"
+}-->
+```
+
+## [ngSwitch]="" | *ngSwitchCase | *ngSwitchDefault
+
+`[ngSwitch]=""` 指令用于执行数据匹配逻辑。
 
 ```html
 <div
@@ -85,3 +94,14 @@ export class DemoTemplateComponent {
   <!--container-->
 </div>
 ```
+
+## 最终代码
+
+Github: <https://github.com/LearnShare/vra-angular/tree/03.template>
+
+在线预览: <https://codesandbox.io/s/vra-angular-03-template-nhqlb>
+
+## 继续阅读
+
++ 上一节:
++ 下一节:

@@ -44,3 +44,14 @@
 ## [style]="" | [style.key]=""
 
 `[style]=""` 和 `[style.key]=""` 用于绑定 `style` 属性，参考 [样式]。
+
+## 最终代码
+
+Github: <https://github.com/LearnShare/vra-angular/tree/03.template>
+
+在线预览: <https://codesandbox.io/s/vra-angular-03-template-nhqlb>
+
+## 继续阅读
+
++ 上一节:
++ 下一节:
