@@ -79,7 +79,7 @@ this.data = {
 
 `index as i` 是为局部变量 `index` 指定别名 `i`，也可以写为 `let i = index` 的形式。`*ngFor` 提供了许多局部变量，请参考下一节。
 
-` | keyvalue` 是一种管道语法，参考 [管道]。`keyvalue` 是 Angular 提供的内置管道之一，它用于将 Object 或 Map 转换为键值对数组（[[key, value]]）。
+` | keyvalue` 是一种管道语法，参考 [管道]。`keyvalue` 是 Angular 提供的内置管道之一，它用于将 Object 或 Map 转换为键值对数组（[{key, value}]）。
 
 ## 局部变量
 
