@@ -102,5 +102,5 @@ Github: <https://github.com/LearnShare/vra-angular/tree/03.template>
 
 ## 继续阅读
 
-+ 上一节:
-+ 下一节:
++ 上一节: [显示或隐藏元素](./if-switch.md)
++ 下一节: [事件](./event.md)

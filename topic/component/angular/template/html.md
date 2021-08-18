@@ -83,5 +83,5 @@ Github: <https://github.com/LearnShare/vra-angular/tree/03.template>
 
 ## 继续阅读
 
-+ 上一节:
-+ 下一节:
++ 上一节: [创建、注册和使用组件](../component.md)
++ 下一节: [属性绑定](./bind.md)

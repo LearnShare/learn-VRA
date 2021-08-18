@@ -32,7 +32,7 @@ export class DemoEventComponent {
 
 `(event)=""` 用于监听 DOM 事件或组件自定义事件。
 
-其属性名可以是 DOM 事件名或自定义事件名称，属性值可以是表达式、方法名称或方法调用语句：
+其属性名可以是 DOM 事件名或自定义事件名称，属性值可以是表达式或方法调用语句：
 
 ```
 // 直接执行表达式
@@ -45,6 +45,15 @@ export class DemoEventComponent {
 // 过滤特定按键
 (keyup.enter)="addItem()"
 ```
+
+```html
+<input
+    type="text"
+    #input
+    (input)="textChanged2(input.value)">
+```
+
+其中，`#input` 是模板引用的声明语法。它声明了一个引用 `<input>` 元素的变量 `input`，`input.value` 代表了文本框当前的值。
 
 ## 事件处理方法
 

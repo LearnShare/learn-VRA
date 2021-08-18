@@ -99,13 +99,14 @@
     + [显示或隐藏元素](./angular/template/if-switch.md)
     + [循环](./angular/template/for.md)
     + [事件](./angular/template/event.md)
-    + [表单](./angular/template/form.md)
-  + 样式
+    + [表单和双向绑定](./angular/template/form.md)
+  + [样式](./angular/style.md)
   + 生命周期
   + ref 和 DOM
   + 特殊组件和模式
     + ng-container
     + ng-template
+    + @angular/forms
   + 模块
   + 依赖注入
   + 指令
