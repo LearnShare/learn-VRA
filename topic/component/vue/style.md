@@ -282,9 +282,9 @@ export default {
 
 ## 最终代码
 
-Github: <https://github.com/LearnShare/vra-vue/tree/08.style>
+Github: <https://github.com/LearnShare/vra-vue/tree/07.style>
 
-在线预览: <https://codesandbox.io/s/vra-vue-08-style-kb1rs>
+在线预览: <https://codesandbox.io/s/vra-vue-07-style-kb1rs>
 
 ## 继续阅读
 
