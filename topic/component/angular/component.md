@@ -60,6 +60,9 @@ ng generate component components/toggle-button
   styles: [], // 字符串形式的样式声明
   styleUrls: [], // 独立的样式文件
 
+  // 样式封装策略（可选的）
+  encapsulation: '',
+
   // 动画（可选的）
   animations: [],
 
