@@ -16,6 +16,8 @@ Why not.
 3. 将 demo 呈现在 <https://codesandbox.io/> 上
 4. 按日总结并更新
 
+**注意**：<https://codesandbox.io/> 上 demo 的呈现效果可能与本地不同，强烈建议 clone 到本地运行和测试。
+
 ## 相关代码
 
 + [Vue](https://github.com/LearnShare/vra-vue)

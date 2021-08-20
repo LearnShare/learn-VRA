@@ -36,7 +36,7 @@ v-on:click="count += 1"
 
 // 调用事件处理方法
 v-on:input="eventListener"
-v-on:input="eventListener($event))"
+v-on:input="eventListener($event)"
 
 // 简写为
 @click="count += 1"
