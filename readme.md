@@ -124,6 +124,8 @@ Why not.
       <td>
         <a href="./topic/app/vue/vue-path.md">路径别名</a>
       </td>
+      <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td colspan="2" rowspan="2">
@@ -143,6 +145,8 @@ Why not.
       <td>
         <a href="./topic/component/vue/sfc.md">单文件组件</a>
       </td>
+      <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td rowspan="6">模板</td>
@@ -247,6 +251,8 @@ Why not.
       <td>
         <span>computed</span>
       </td>
+      <td>-</td>
+      <td>-</td>
     </tr>
   </tbody>
 </table>

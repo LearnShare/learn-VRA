@@ -43,6 +43,8 @@
       <td>
         <a href="./vue/sfc.md">单文件组件</a>
       </td>
+      <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td rowspan="6">模板</td>
@@ -147,6 +149,8 @@
       <td>
         <span>computed</span>
       </td>
+      <td>-</td>
+      <td>-</td>
     </tr>
   </tbody>
 </table>
