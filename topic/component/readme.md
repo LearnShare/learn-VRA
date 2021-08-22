@@ -32,10 +32,10 @@
       <td>
         <a href="./vue/component.md">创建、注册和使用组件</a>
       </td>
-      <td rowspan="2">
+      <td>
         <a href="./react/component.md">创建和使用组件</a>
       </td>
-      <td rowspan="2">
+      <td>
         <a href="./react/angular.md">创建、注册和使用组件</a>
       </td>
     </tr>
@@ -118,6 +118,34 @@
       </td>
       <td>
         <a href="./angular/style.md">样式</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" rowspan="3">数据</td>
+      <td>
+        <span>data</span>
+      </td>
+      <td>
+        <span>state</span>
+      </td>
+      <td>
+        <span>数据</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>props</span>
+      </td>
+      <td>
+        <span>props</span>
+      </td>
+      <td>
+        <span>@Input</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>computed</span>
       </td>
     </tr>
   </tbody>

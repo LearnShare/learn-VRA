@@ -13,4 +13,4 @@ TypeScript 能够提高 JavaScript 项目的质量，也越来越流行了。
 ## 继续阅读
 
 + 上一节: [hello-world](../hello-world/readme.md)
-+ 下一节: 无
++ 下一节: [应用配置和启动](../app/readme.md)

@@ -66,5 +66,5 @@ ReactDOM.render(element, container, callback?)
 
 ## 继续阅读
 
-+ 上一节: [Vue 应用](../vue/vue-app.md)
++ 上一节: [路径别名](../vue/vue-path.md)
 + 下一节: [Angular 应用](../angular/angular-app.md)

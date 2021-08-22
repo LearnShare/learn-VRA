@@ -60,3 +60,8 @@ import Button from 'comp/button/index.vue';
 
 + [Stackoverflow: Make VS code read webpack.config and recognize path with alias?](https://stackoverflow.com/questions/38044010/make-vs-code-read-webpack-config-and-recognize-path-with-alias)
 + [Code 插件: 别名路径跳转](https://marketplace.visualstudio.com/items?itemName=lihuiwang.vue-alias-skip)
+
+## 继续阅读
+
++ 上一节: [Vue 应用](./vue-app.md)
++ 下一节: [React 应用](../react/react-app.md)

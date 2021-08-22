@@ -30,7 +30,7 @@ vra-angular
   .browserslintrc           // Browserslist 配置
   .editorconfig             // EditorConfig 配置
   .gitignore
-  angular.json
+  angular.json              // Angular CLI 配置
   karma.conf.js             // Karma 配置
   package-lock.json
   package.json

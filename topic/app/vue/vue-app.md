@@ -112,4 +112,4 @@ app.use(plugin, ...options?)
 ## 继续阅读
 
 + 上一节: [应用配置和启动](../readme.md)
-+ 下一节: [React 应用](../react/react-app.md)
++ 下一节: [路径别名](./vue-path.md)

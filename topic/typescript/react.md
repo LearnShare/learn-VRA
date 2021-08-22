@@ -64,4 +64,4 @@ Github: <https://github.com/LearnShare/vra-react/tree/02.typescript>
 ## 继续阅读
 
 + 上一节: [创建基于 TypeScript 的 Vue 项目](./vue.md)
-+ 下一节: 无
++ 下一节: [应用配置和启动](../app/readme.md)
