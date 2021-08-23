@@ -18,6 +18,12 @@ Why not.
 
 **注意**：<https://codesandbox.io/> 上 demo 的呈现效果可能与本地不同，强烈建议 clone 到本地运行和测试。
 
+## 交流讨论
+
++ learnshare.hjq#gmail
++ 各项目 issues
++ [Discord: Learn-VRA](https://discord.gg/vzfFh54322)
+
 ## 相关代码
 
 + [Vue](https://github.com/LearnShare/vra-vue)
@@ -232,7 +238,7 @@ Why not.
     <tr>
       <td colspan="2" rowspan="3">数据</td>
       <td>
-        <span>data</span>
+        <a href="./topic/component/vue/data/readme.md">data</a>
       </td>
       <td>
         <span>state</span>

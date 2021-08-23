@@ -1,0 +1,93 @@
+# data
+
+Vue 组件的 data 选项声明了组件内部的数据。
+
+```js
+import {
+  defineComponent,
+} from 'vue/dist/vue.esm-bundler';
+
+const ToggleButton = defineComponent({
+  name: 'toggle-button',
+  template: `
+    <button
+        @click="toggleChecked">{{ checked ? 'ON' : 'OFF' }}</button>
+  `,
+  data() {
+    return {
+      checked: false,
+    };
+  },
+  methods: {
+    toggleChecked() {
+      this.checked = !this.checked;
+    },
+  },
+});
+
+export default ToggleButton;
+```
+
+## data 选项
+
+`data` 选项应当是一个方法，该方法返回一个数据对象：
+
+```js
+data() {
+  return {
+    //
+  };
+}
+```
+
+## 定义数据
+
+```js
+data() {
+  return {
+    a: 1,
+    b: 2,
+    c: {
+      x: '1',
+      y: '2',
+    },
+    d: ['A', 'B'],
+    now: new Date(),
+  };
+}
+```
+
+**注意**：为了保证数据的响应性，需要在 `data` 选项中完成所有数据的定义。
+
+## 访问和修改数据
+
+在模板中访问时，可以直接直接使用各个属性 `key`：
+
+```vue
+<template>
+  <p>{{ a + b }}</p>
+  <p>{{ formatDateTime(now) }}</p>
+</template>
+```
+
+在 JavaScript 逻辑中访问时，直接访问和修改 `this.key`：
+
+```js
+{
+  computed: {
+    sum() {
+      return this.a + this.b;
+    },
+  },
+  methods: {
+    addOne() {
+      this.a += 1;
+    },
+    addItem(item) {
+      this.d.push(item);
+    },
+  },
+}
+```
+
+`data` 选项中定义的数据仅能在当前组件的模板和逻辑中访问。可以进一步了解 [跨组件数据传递]。

@@ -1,0 +1,188 @@
+# props
+
+参考：
+
++ [Vue Guide: Props](https://v3.cn.vuejs.org/guide/component-props.html)
+
+`props` 选项用于定义组件的外部数据，这些数据需要从外部传入。
+
+```js
+props: {
+  msg: String,
+},
+```
+
++ `props` 需要在子组件中定义
++ `props` 由父组件传递给子组件，数据传递是单向的
++ `props` 是只读的
+
+## 定义 props
+
+```js
+// 仅指定字段名称
+props: [
+  'title',
+  'content',
+],
+
+// 指定数据类型、必填、默认值和校验方法
+props: {
+  title: String,
+  // 允许多种类型
+  id: [Number, String],
+  // 必填
+  username: {
+    type: String,
+    required: true,
+  },
+  size: {
+    type: String,
+    // 默认值
+    default: 'medium',
+    // 校验方法
+    validator(value) {
+      return [
+        'small',
+        'medium',
+        'large',
+      ].includes(value);
+    },
+  },
+  createdAt: Date,
+  config: Object,
+},
+```
+
+`null` 和 `undefined` 能通过基本类型（如 `string`）的校验。
+
+## 传递数据
+
+`props` 需要由父组件传递给子组件。
+
+demo-children.vue:
+
+```js
+props: {
+  defaultValue: {
+    type: String,
+    default: 'default',
+  },
+  numberValue: Number,
+  stringValue: String,
+  list: Array,
+  config: Object,
+  count: Number,
+  func: Function,
+},
+```
+
+demo-parent.vue:
+
+```vue
+<template>
+  <demo-children
+      :numberValue="12"
+      :string-value="msg"
+      :list="sizes"
+      :config="config"
+      :count="count.value"
+      :func="addNumber" />
+</template>
+
+<script>
+import DemoChildren from './demo-children.vue';
+
+export default {
+  name: 'DemoParent',
+  components: {
+    DemoChildren,
+  },
+  data() {
+    return {
+      msg: 'Hello',
+      sizes: [
+        'small',
+        'medium',
+        'large',
+      ],
+      config: {
+        x: 1,
+        y: 'B',
+        z: false,
+      },
+      count: {
+        value: 0,
+      },
+    };
+  },
+  methods: {
+    addNumber(value) {
+      this.count.value += value;
+    },
+  },
+};
+</script>
+```
+
+模板中的 `props` 字段名称支持 `propName` 和 `prop-name` 两种形式，但建议 `props` 声明和使用时都采用 `propName` 的形式。
+
+## 使用数据
+
+`props` 中定义的数据也可以在模板或 JavaScript 中使用。但与 `data` 不同的是，**`props` 中的数据是只读的**。
+
+```vue
+<template>
+  <div class="demo-children">
+    <p>defaultValue: {{ defaultValue }}</p>
+    <p>numberValue * 2: {{ double }}</p>
+    <p>stringValue: {{ stringValue }}</p>
+    <p>list:</p>
+    <ul>
+      <li
+          v-for="(item, index) in list"
+          :key="index">{{ item }}</li>
+    </ul>
+    <p>config:</p>
+    <ul>
+      <li
+          v-for="(value, key) in config"
+          :key="key">{{ key }}: {{ value }}</li>
+    </ul>
+    <p>
+      <span>count: {{ count }}&nbsp;</span>
+      <button
+          @click="add">+ 2</button>
+    </p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'DemoChildren',
+  props: {
+    defaultValue: {
+      type: String,
+      default: 'default',
+    },
+    numberValue: Number,
+    stringValue: String,
+    list: Array,
+    config: Object,
+    count: Number,
+    func: Function,
+  },
+  computed: {
+    double() {
+      return this.numberValue
+        ? this.numberValue * 2
+        : '';
+    },
+  },
+  methods: {
+    add() {
+      this.func(2);
+    },
+  },
+};
+</script>
+```
