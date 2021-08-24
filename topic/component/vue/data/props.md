@@ -186,3 +186,14 @@ export default {
 };
 </script>
 ```
+
+## 最终代码
+
+Github: <https://github.com/LearnShare/vra-vue/tree/08.data>
+
+在线预览: <https://codesandbox.io/s/vra-vue-08-data-mqpp9>
+
+## 继续阅读
+
++ 上一节: [data](./data.md)
++ 下一节: [computed](./computed.md)

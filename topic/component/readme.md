@@ -123,9 +123,18 @@
       </td>
     </tr>
     <tr>
-      <td colspan="2" rowspan="3">数据</td>
+      <td colspan="2" rowspan="4">
+        <a href="./data.md">数据</a>
+      </td>
       <td>
-        <span>data</span>
+        <a href="./vue/data/reactivity.md">数据的响应性</a>
+      </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="./vue/data/data.md">data</a>
       </td>
       <td>
         <span>state</span>
@@ -136,7 +145,7 @@
     </tr>
     <tr>
       <td>
-        <span>props</span>
+        <a href="./vue/data/props.md">props</a>
       </td>
       <td>
         <span>props</span>
@@ -147,7 +156,7 @@
     </tr>
     <tr>
       <td>
-        <span>computed</span>
+        <a href="./vue/data/computed.md">computed</a>
       </td>
       <td>-</td>
       <td>-</td>

@@ -21,6 +21,11 @@
           v-for="item in filteredList"
           :key="item.id">{{ item.name }} - {{ item.size }}</li>
     </ul>
+    <p>
+      <span>value: {{ value }}, double: {{ double }}&nbsp;</span>
+      <button
+          @click="setDouble">Set double = 16</button>
+    </p>
   </div>
 </template>
 
@@ -54,6 +59,7 @@ export default {
           size: 'small',
         },
       ],
+      value: 3,
     };
   },
   computed: {
@@ -67,6 +73,19 @@ export default {
       }
 
       return this.list;
+    },
+    double: {
+      get() {
+        return this.value * 2;
+      },
+      set(value) {
+        this.value = value / 2;
+      },
+    },
+  },
+  methods: {
+    setDouble() {
+      this.double = 16;
     },
   },
 };
@@ -112,3 +131,14 @@ computed: {
   },
 }
 ```
+
+## 最终代码
+
+Github: <https://github.com/LearnShare/vra-vue/tree/08.data>
+
+在线预览: <https://codesandbox.io/s/vra-vue-08-data-mqpp9>
+
+## 继续阅读
+
++ 上一节: [props](./props.md)
++ 下一节:

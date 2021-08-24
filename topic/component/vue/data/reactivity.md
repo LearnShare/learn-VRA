@@ -5,7 +5,13 @@
 + [Vue Guide: 深入响应性原理](https://v3.cn.vuejs.org/guide/reactivity.html)
 + [MDN: Proxy](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Proxy)
 
-Vue 中的数据具有响应性，具体表现在以下几个方面：
+Vue 中存在以下三种数据：
+
++ `data`: 组件内部的数据
++ `props`: 外部传入的数据
++ `computed`: 计算数据
+
+数据具有响应性，具体表现在以下几个方面：
 
 ## 1. 模板渲染
 
@@ -57,4 +63,21 @@ export default {
 
 Vue 会在 `now` 数据发生变化后，检查模板中对 `now` 的每一处引用，完成计算并决定是否重新渲染。
 
-## 2. 关联计算
+## 2. 关联方法
+
+`computed` 中的方法及模板中调用的方法会在依赖的数据发生变化后自动重新执行。
+
+## 3. 数据绑定
+
+如果组件中的数据通过模板绑定到子组件，当数据发生变化后，子组件的 `props` 数据也会更新。
+
+## 最终代码
+
+Github: <https://github.com/LearnShare/vra-vue/tree/08.data>
+
+在线预览: <https://codesandbox.io/s/vra-vue-08-data-mqpp9>
+
+## 继续阅读
+
++ 上一节: [数据](../../data.md)
++ 下一节: [data](./data.md)

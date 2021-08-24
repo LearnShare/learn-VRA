@@ -91,3 +91,14 @@ data() {
 ```
 
 `data` 选项中定义的数据仅能在当前组件的模板和逻辑中访问。可以进一步了解 [跨组件数据传递]。
+
+## 最终代码
+
+Github: <https://github.com/LearnShare/vra-vue/tree/08.data>
+
+在线预览: <https://codesandbox.io/s/vra-vue-08-data-mqpp9>
+
+## 继续阅读
+
++ 上一节: [数据的响应性](./reactivity.md)
++ 下一节: [props](./props.md)

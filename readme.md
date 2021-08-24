@@ -236,9 +236,18 @@ Why not.
       </td>
     </tr>
     <tr>
-      <td colspan="2" rowspan="3">数据</td>
+      <td colspan="2" rowspan="4">
+        <a href="./topic/component/data.md">数据</a>
+      </td>
       <td>
-        <a href="./topic/component/vue/data/readme.md">data</a>
+        <a href="./topic/component/vue/data/reactivity.md">数据的响应性</a>
+      </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="./topic/component/vue/data/data.md">data</a>
       </td>
       <td>
         <span>state</span>
@@ -249,7 +258,7 @@ Why not.
     </tr>
     <tr>
       <td>
-        <span>props</span>
+        <a href="./topic/component/vue/data/props.md">props</a>
       </td>
       <td>
         <span>props</span>
@@ -260,7 +269,7 @@ Why not.
     </tr>
     <tr>
       <td>
-        <span>computed</span>
+        <a href="./topic/component/vue/data/computed.md">computed</a>
       </td>
       <td>-</td>
       <td>-</td>
