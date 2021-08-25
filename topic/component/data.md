@@ -11,8 +11,8 @@
   + [state](./react/state.md): 组件内部的数据
   + [props](./react/props.md): 外部传入的数据
 + Angular
-  + 数据: 组件内部的数据
-  + @Input: 外部传入的数据
+  + [数据](./angular/data.md): 组件内部的数据
+  + [@Input](./angular/input.md): 外部传入的数据
 
 ## 继续阅读
 

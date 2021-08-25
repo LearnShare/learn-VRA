@@ -253,7 +253,7 @@ Why not.
         <a href="./topic/component/react/state.md">state</a>
       </td>
       <td>
-        <span>数据</span>
+        <a href="./topic/component/angular/data.md">数据</a>
       </td>
     </tr>
     <tr>
@@ -264,7 +264,7 @@ Why not.
         <a href="./topic/component/react/props.md">props</a>
       </td>
       <td>
-        <span>@Input</span>
+        <a href="./topic/component/angular/input.md">@Input</a>
       </td>
     </tr>
     <tr>

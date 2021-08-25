@@ -140,7 +140,7 @@
         <a href="./react/state.md">state</a>
       </td>
       <td>
-        <span>数据</span>
+        <a href="./angular/data.md">数据</a>
       </td>
     </tr>
     <tr>
@@ -151,7 +151,7 @@
         <a href="./react/props.md">props</a>
       </td>
       <td>
-        <span>@Input</span>
+        <a href="./angular/input.md">@Input</a>
       </td>
     </tr>
     <tr>
@@ -250,6 +250,9 @@
     + [事件](./angular/template/event.md)
     + [表单和双向绑定](./angular/template/form.md)
   + [样式](./angular/style.md)
+  + 数据
+    + [组件数据](./angular/data.md)
+    + [@Input](./angular/input.md)
   + 生命周期
   + ref 和 DOM
   + 特殊组件和模式
