@@ -250,7 +250,7 @@ Why not.
         <a href="./topic/component/vue/data/data.md">data</a>
       </td>
       <td>
-        <span>state</span>
+        <a href="./topic/component/react/state.md">state</a>
       </td>
       <td>
         <span>数据</span>
@@ -261,7 +261,7 @@ Why not.
         <a href="./topic/component/vue/data/props.md">props</a>
       </td>
       <td>
-        <span>props</span>
+        <a href="./topic/component/react/props.md">props</a>
       </td>
       <td>
         <span>@Input</span>

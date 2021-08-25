@@ -137,7 +137,7 @@
         <a href="./vue/data/data.md">data</a>
       </td>
       <td>
-        <span>state</span>
+        <a href="./react/state.md">state</a>
       </td>
       <td>
         <span>数据</span>
@@ -148,7 +148,7 @@
         <a href="./vue/data/props.md">props</a>
       </td>
       <td>
-        <span>props</span>
+        <a href="./react/props.md">props</a>
       </td>
       <td>
         <span>@Input</span>
@@ -177,9 +177,10 @@
       + [表单和双向绑定](./vue/template/form.md)
   + [样式](./vue/style.md)
   + 数据
-    + data
-    + props
-    + computed
+    + [数据的响应性](./vue/data/reactivity.md)
+    + [data](./vue/data/data.md)
+    + [props](./vue/data/props.md)
+    + [computed](./vue/data/computed.md)
   + 逻辑
     + 方法
     + watch
@@ -217,8 +218,8 @@
     + [事件](./react/event.md)
     + [表单](./react/form.md)
   + [样式](./react/style.md)
-  + state
-  + props
+  + [state](./react/state.md)
+  + [props](./react/props.md)
   + 生命周期
   + ref 和 DOM
   + 特殊组件和模式
