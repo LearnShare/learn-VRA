@@ -274,6 +274,34 @@ Why not.
       <td>-</td>
       <td>-</td>
     </tr>
+    <tr>
+      <td colspan="2" rowspan="3">
+        <a href="./topic/component/func.md">逻辑</a>
+      </td>
+      <td>
+        <a href="./topic/component/vue/func/methods.md">methods</a>
+      </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="./topic/component/vue/func/watch.md">watch</a>
+      </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="./topic/component/vue/func/lifecycle.md">生命周期</a>
+      </td>
+      <td>
+        <a href="./topic/component/react/lifecycle.md">生命周期</a>
+      </td>
+      <td>
+        <a href="./topic/component/angular/lifecycle.md">生命周期</a>
+      </td>
+    </tr>
   </tbody>
 </table>
 

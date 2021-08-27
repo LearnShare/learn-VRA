@@ -1,0 +1,81 @@
+# methods - 方法
+
+在前面的例子中，我们已经体验了在 Vue 组件中声明和调用方法（或函数）：
+
+```js
+import {
+  defineComponent,
+} from 'vue/dist/vue.esm-bundler';
+
+const ToggleButton = defineComponent({
+  name: 'toggle-button',
+  template: `
+    <button
+        @click="toggleChecked">{{ checked ? 'ON' : 'OFF' }}</button>
+  `,
+  data() {
+    return {
+      checked: false,
+    };
+  },
+  methods: {
+    toggleChecked() {
+      this.checked = !this.checked;
+    },
+  },
+});
+
+export default ToggleButton;
+```
+
+## 声明方法
+
+Vue 中的一般方法和事件处理方法都需要写在组件的 `methods` 选项中：
+
+```js
+methods: {
+  func1() {
+    this.func2('arg');
+  },
+  func2(arg) {
+    console.log(arg);
+  },
+  toggleChecked() {
+    this.checked = !this.checked;
+  },
+},
+```
+
++ `methods` 中的方法会自动绑定到组件实例中，通过 `this.funcName()` 访问
++ 方法中的 `this` 也指向组件实例
++ Vue 不建议在 `methods` 中定义箭头函数 `func3 = () => {}`，这可能会影响 `this` 的指向
+
+## 调用方法
+
+Vue 中调用/使用方法的方式有很多：
+
+1. 作为文本插值
+  ```vue
+  {{ formatTime(item.createdAt) }}
+  ```
+2. 作为事件处理方法
+  ```vue
+  <button
+      @click="toggleChecked">
+  ```
+3. 作为值传递给子组件
+  ```vue
+  <demo-children
+      :func="addNumber" />
+  ```
+4. 在其他方法、watch 或生命周期钩子中调用
+  ```js
+  mounted() {
+    this.getData();
+  },
+  ```
+
+## 继续阅读
+
++ 上一节: [逻辑](../../func.md)
++ 下一节: [watch](./watch.md)

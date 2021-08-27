@@ -1,6 +1,6 @@
 # computed
 
-`computed` 用于完成数据的自动处理，如加减运算或列表过滤。
+`computed` 用于完成数据的自动跟踪和处理，如加减运算或列表过滤。
 
 ```vue
 <template>
@@ -107,6 +107,8 @@ computed: {
 ## computed 值
 
 `computed` 中的方法可以像 `data` 和 `props` 一样作为值，在模板或 JavaScript 逻辑中使用。
+
+`computed` 中的方法应当只包含数据处理逻辑，不应该包含任何副作用。当依赖的值一样时，执行的结果也应当一样。而且每次执行都不会改变其他数据，也不能执行接口调用等操作。
 
 ## getter/setter
 

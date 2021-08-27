@@ -161,6 +161,34 @@
       <td>-</td>
       <td>-</td>
     </tr>
+    <tr>
+      <td colspan="2" rowspan="3">
+        <a href="./func.md">逻辑</a>
+      </td>
+      <td>
+        <a href="./vue/func/methods.md">methods</a>
+      </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="./vue/func/watch.md">watch</a>
+      </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="./vue/func/lifecycle.md">生命周期</a>
+      </td>
+      <td>
+        <a href="./react/lifecycle.md">生命周期</a>
+      </td>
+      <td>
+        <a href="./angular/lifecycle.md">生命周期</a>
+      </td>
+    </tr>
   </tbody>
 </table>
 
@@ -182,22 +210,22 @@
     + [props](./vue/data/props.md)
     + [computed](./vue/data/computed.md)
   + 逻辑
-    + 方法
-    + watch
-    + 生命周期
+    + [methods - 方法](./vue/func/methods.md)
+    + [watch](./vue/func/watch.md)
+    + [生命周期](./vue/func/lifecycle.md)
   + ref 和 DOM
-  + 特殊组件和模式
-    + \<template\>
-    + \<slot\>
-    + \<teleport\>
   + 跨组件数据传递
     + 插槽
     + props 和 attr
     + 自定义事件
     + Provide/Inject
     + 状态管理
-  + 动态组件
-  + 异步组件
+  + 特殊组件和模式
+    + \<template\>
+    + \<slot\>
+    + \<teleport\>
+    + 动态组件
+    + 异步组件
   + 路由
   + 过渡和动画
   + 扩展阅读
@@ -220,8 +248,13 @@
   + [样式](./react/style.md)
   + [state](./react/state.md)
   + [props](./react/props.md)
-  + 生命周期
+  + 逻辑
+    + [生命周期](./react/lifecycle.md)
   + ref 和 DOM
+  + 跨组件数据传递
+    + props
+    + Context
+    + 状态管理
   + 特殊组件和模式
     + Suspense 和按需加载
     + Portal
@@ -229,10 +262,6 @@
     + 高阶组件
     + Profiler
     + StrictMode
-  + 跨组件数据传递
-    + props
-    + Context
-    + 状态管理
   + 路由
   + 扩展阅读
     + 编程式的模板
@@ -253,22 +282,23 @@
   + 数据
     + [组件数据](./angular/data.md)
     + [@Input](./angular/input.md)
-  + 生命周期
+  + 逻辑
+    + [生命周期](./angular/lifecycle.md)
   + ref 和 DOM
-  + 特殊组件和模式
-    + ng-container
-    + ng-template
-    + @angular/forms
-  + 模块
-  + 依赖注入
-  + 指令
-  + 服务
-  + 管道
   + 跨组件数据传递
     + @Input
     + @Output
     + 内容投影
     + 状态管理
+  + 特殊组件和模式
+    + ng-container
+    + ng-template
+    + @angular/forms
+    + 模块
+    + 依赖注入
+    + 指令
+    + 服务
+    + 管道
   + 路由
   + 网络请求
   + 动画
