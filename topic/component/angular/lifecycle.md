@@ -44,4 +44,4 @@ class DemoLifeCycle extends Component
 ## 继续阅读
 
 + 上一节: [生命周期](../react/lifecycle.md)
-+ 下一节:
++ 下一节: [ref 和 DOM](../../ref/readme.md)

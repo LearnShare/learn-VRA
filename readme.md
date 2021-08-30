@@ -302,6 +302,16 @@ Why not.
         <a href="./topic/component/angular/lifecycle.md">生命周期</a>
       </td>
     </tr>
+    <tr>
+      <td colspan="2">
+        <a href="./topic/ref/readme.md">ref 和 DOM</a>
+      </td>
+      <td>
+        <a href="./topic/ref/vue-ref.md">ref</a>
+      </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
   </tbody>
 </table>
 
@@ -310,7 +320,7 @@ Why not.
 + [使用 TypeScript 的 Vue/React 项目](./topic/typescript/readme.md)
 + [应用配置和启动](./topic/app/readme.md)
 + [组件](./topic/component/readme.md)
-+ ref 和 DOM
++ [ref 和 DOM](./topic/ref/readme.md)
 + 跨组件数据传递
 + 路由
 + 网络请求

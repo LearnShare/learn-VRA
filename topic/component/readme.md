@@ -213,7 +213,7 @@
     + [methods - 方法](./vue/func/methods.md)
     + [watch](./vue/func/watch.md)
     + [生命周期](./vue/func/lifecycle.md)
-  + ref 和 DOM
+  + [ref 和 DOM](../ref/vue-ref.md)
   + 跨组件数据传递
     + 插槽
     + props 和 attr
