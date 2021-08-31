@@ -213,7 +213,7 @@
     + [methods - 方法](./vue/func/methods.md)
     + [watch](./vue/func/watch.md)
     + [生命周期](./vue/func/lifecycle.md)
-  + [ref 和 DOM](../ref/vue-ref.md)
+  + [ref - 模板引用](../ref/vue-ref.md)
   + 跨组件数据传递
     + 插槽
     + props 和 attr
@@ -250,7 +250,7 @@
   + [props](./react/props.md)
   + 逻辑
     + [生命周期](./react/lifecycle.md)
-  + ref 和 DOM
+  + [ref 和 DOM](../ref/react-ref.md)
   + 跨组件数据传递
     + props
     + Context
@@ -284,7 +284,7 @@
     + [@Input](./angular/input.md)
   + 逻辑
     + [生命周期](./angular/lifecycle.md)
-  + ref 和 DOM
+  + [模板变量](../ref/angular-ref.md)
   + 跨组件数据传递
     + @Input
     + @Output

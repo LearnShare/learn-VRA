@@ -43,7 +43,7 @@ export default {
     ref="helloworldComponent" />
 ```
 
-+ 引用 ID（或引用名称）可以是 `userName` 或 `user-name` 的形式，但建议仅使用 `userName` 形式。
++ 引用 ID（或引用名称）可以是 `refName` 或 `ref-name` 的形式（但建议仅使用 `refName` 形式，因为这样更方便访问和使用）。
 + 引用 ID 应当是唯一的。
 + 当存在多个同名的引用时，只有最后一个元素会被引用。
 
@@ -115,7 +115,7 @@ refItems(el) {
 },
 ```
 
-该方法可以包含一个参数，代表当前 DOM 元素或组件实例。
+该方法可以包含一个参数，代表当前的 DOM 元素或组件实例。
 
 利用这种方法的一个例子：
 
@@ -135,6 +135,8 @@ refItems(el) {
 ```
 
 `autoHint` 方法会自动将 `input` 元素的 "name" 属性值作为占位文本。
+
+**提示**：可以使用这种方式控制和处理子组件内部的元素或组件。比如获取子组件内部的 canvas 元素，并完成绘图操作。
 
 ## this.$refs - 访问元素/组件
 
@@ -216,4 +218,4 @@ Github: <https://github.com/LearnShare/vra-vue/tree/10.ref>
 ## 继续阅读
 
 + 上一节: [ref 和 DOM](./readme.md)
-+ 下一节:
++ 下一节: [ref 和 DOM](./react-ref.md)

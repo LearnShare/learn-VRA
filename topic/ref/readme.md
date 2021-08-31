@@ -14,9 +14,9 @@ Vue、React 和 Angular 均提供了引用 DOM 元素的功能，方便进行 DO
 + Vue
   + [模板引用](./vue-ref.md)
 + React
-  + [模板引用](./react-ref.md)
+  + [ref 和 DOM](./react-ref.md)
 + Angular
-  + [模板引用](./vue-ref.md)
+  + [模板变量](./angular-ref.md)
 
 ## 继续阅读
 
