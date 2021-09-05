@@ -303,7 +303,7 @@ Why not.
       </td>
     </tr>
     <tr>
-      <td colspan="2">
+      <td colspan="2" rowspan="3">
         <a href="./topic/ref/readme.md">ref 和 DOM</a>
       </td>
       <td>
@@ -313,7 +313,21 @@ Why not.
         <a href="./topic/ref/react-ref.md">ref 和 DOM</a>
       </td>
       <td>
-        <a href="./topic/ref/angular-ref.md">模板变量</a>
+        <a href="./topic/ref/angular/ref.md">模板变量</a>
+      </td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>
+        <a href="./topic/ref/angular/template-ref.md">TemplateRef</a>
+      </td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>
+        <a href="./topic/ref/angular/view-children.md">@ViewChildren</a>
       </td>
     </tr>
   </tbody>

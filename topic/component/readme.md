@@ -284,7 +284,9 @@
     + [@Input](./angular/input.md)
   + 逻辑
     + [生命周期](./angular/lifecycle.md)
-  + [模板变量](../ref/angular-ref.md)
+  + [模板变量](../ref/angular/ref.md)
+    + [TemplateRef](../ref/angular/template-ref.md)
+    + [@ViewChildren](../ref/angular/view-children.md)
   + 跨组件数据传递
     + @Input
     + @Output
