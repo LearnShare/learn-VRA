@@ -101,6 +101,9 @@ export default {
   // 组件参数
   props: {},
 
+  // 是否继承非 props 属性
+  inheritAttrs: true,
+
   // 组件内的数据
   data() {
     return {};

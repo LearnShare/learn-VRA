@@ -330,6 +330,53 @@ Why not.
         <a href="./topic/ref/angular/view-children.md">@ViewChildren</a>
       </td>
     </tr>
+    <tr>
+      <td rowspan="6">
+        <a href="./topic/data-transfer/readme.md">跨组件数据传递</a>
+      </td>
+      <td>props/@Input</td>
+      <td>
+        <a href="./topic/component/vue/data/props.md">props</a>
+      </td>
+      <td>
+        <a href="./topic/component/react/props.md">props</a>
+      </td>
+      <td>
+        <a href="./topic/component/angular/input.md">@Input</a>
+      </td>
+    </tr>
+    <tr>
+      <td>attrs</td>
+      <td>
+        <a href="./topic/data-transfer/vue/attrs.md">attrs</a>
+      </td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>slot</td>
+      <td>slot</td>
+      <td>-</td>
+      <td>内容投影</td>
+    </tr>
+    <tr>
+      <td>自定义事件</td>
+      <td>$emit</td>
+      <td>-</td>
+      <td>@Output</td>
+    </tr>
+    <tr>
+      <td>?</td>
+      <td>Provide/Inject</td>
+      <td>Context</td>
+      <td>Service</td>
+    </tr>
+    <tr>
+      <td>状态管理</td>
+      <td>Vuex</td>
+      <td>Redux</td>
+      <td>RxJS</td>
+    </tr>
   </tbody>
 </table>
 
@@ -339,7 +386,7 @@ Why not.
 + [应用配置和启动](./topic/app/readme.md)
 + [组件](./topic/component/readme.md)
 + [ref 和 DOM](./topic/ref/readme.md)
-+ 跨组件数据传递
++ [跨组件数据传递](./topic/data-transfer/readme.md)
 + 路由
 + 网络请求
 + 服务端渲染

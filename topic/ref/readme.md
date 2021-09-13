@@ -23,4 +23,4 @@ Vue、React 和 Angular 均提供了引用 DOM 元素的功能，方便进行 DO
 ## 继续阅读
 
 + 上一节: [逻辑](../component/func.md)
-+ 下一节:
++ 下一节: [跨组件数据传递](../data-transfer/readme.md)
