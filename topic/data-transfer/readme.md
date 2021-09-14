@@ -27,6 +27,7 @@
   + 状态管理
 + Angular
   + [@Input](../component/angular/input.md)
+  + [attrs](./angular/attrs.md)
   + 内容投影
   + @Output
   + 状态管理

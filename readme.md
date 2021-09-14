@@ -351,7 +351,9 @@ Why not.
         <a href="./topic/data-transfer/vue/attrs.md">attrs</a>
       </td>
       <td>-</td>
-      <td>-</td>
+      <td>
+        <a href="./topic/data-transfer/angular/attrs.md">attrs</a>
+      </td>
     </tr>
     <tr>
       <td>slot</td>

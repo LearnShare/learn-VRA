@@ -48,6 +48,8 @@ class MessageBox extends Component {
 + 方便开发工具提供输入提示信息
 + 提供编译时的数据检查和错误提示
 
+**提示**：对于添加到组件上的属性，即使未在 props 中定义，也未在组件中使用，该属性仍然会添加到组件的 props 数据中。
+
 ## propTypes - 定义和类型检查
 
 可以使用 [PropTypes](https://www.npmjs.com/package/prop-types) 模块实现 `props` 数据的定义和类型检查：
