@@ -357,7 +357,9 @@ Why not.
     </tr>
     <tr>
       <td>slot</td>
-      <td>slot</td>
+      <td>
+        <a href="./topic/data-transfer/vue/slot.md">slot</a>
+      </td>
       <td>-</td>
       <td>内容投影</td>
     </tr>

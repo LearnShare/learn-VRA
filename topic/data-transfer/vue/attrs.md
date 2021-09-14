@@ -136,4 +136,4 @@ Github: <https://github.com/LearnShare/vra-vue/tree/11.attrs>
 ## 继续阅读
 
 + 上一节: [跨组件数据传递](../readme.md)
-+ 下一节:
++ 下一节: [slot](./slot.md)
