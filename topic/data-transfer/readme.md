@@ -23,6 +23,7 @@
   + 状态管理
 + React
   + [props](../component/react/props.md)
+  + [props.children 和 Render Props](./react/render-props.md)
   + Context
   + 状态管理
 + Angular

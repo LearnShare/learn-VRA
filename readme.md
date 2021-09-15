@@ -360,7 +360,9 @@ Why not.
       <td>
         <a href="./topic/data-transfer/vue/slot.md">slot</a>
       </td>
-      <td>-</td>
+      <td>
+        <a href="./topic/data-transfer/react/render-props.md">props.children 和 Render Props</a>
+      </td>
       <td>内容投影</td>
     </tr>
     <tr>
