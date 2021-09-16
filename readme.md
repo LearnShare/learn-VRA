@@ -363,7 +363,9 @@ Why not.
       <td>
         <a href="./topic/data-transfer/react/render-props.md">props.children 和 Render Props</a>
       </td>
-      <td>内容投影</td>
+      <td>
+        <a href="./topic/data-transfer/angular/ng-content.md">内容投影</a>
+      </td>
     </tr>
     <tr>
       <td>自定义事件</td>

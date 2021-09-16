@@ -59,4 +59,4 @@ Github: <https://github.com/LearnShare/vra-angular/tree/09.attrs>
 ## 继续阅读
 
 + 上一节: [跨组件数据传递](../readme.md)
-+ 下一节:
++ 下一节: [内容投影](./ng-content.md)

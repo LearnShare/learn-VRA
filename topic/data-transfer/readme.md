@@ -29,7 +29,7 @@
 + Angular
   + [@Input](../component/angular/input.md)
   + [attrs](./angular/attrs.md)
-  + 内容投影
+  + [内容投影](./angular/ng-content.md)
   + @Output
   + 状态管理
 
