@@ -369,7 +369,9 @@ Why not.
     </tr>
     <tr>
       <td>自定义事件</td>
-      <td>$emit</td>
+      <td>
+        <a href="./topic/data-transfer/vue/emit.md">$emit</a>
+      </td>
       <td>-</td>
       <td>@Output</td>
     </tr>

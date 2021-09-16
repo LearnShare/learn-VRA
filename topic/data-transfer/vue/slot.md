@@ -230,4 +230,4 @@ Github: <https://github.com/LearnShare/vra-vue/tree/12.slot>
 ## 继续阅读
 
 + 上一节: [attrs](./attrs.md)
-+ 下一节:
++ 下一节: [自定义事件](./emit.md)

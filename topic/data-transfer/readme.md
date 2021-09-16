@@ -18,7 +18,7 @@
   + [props](../component/vue/data/props.md)
   + [attrs](./vue/attrs.md)
   + [slot](./vue/slot.md)
-  + 自定义事件
+  + [自定义事件](./vue/emit.md)
   + Provide/Inject
   + 状态管理
 + React
