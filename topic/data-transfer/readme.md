@@ -31,7 +31,7 @@
   + [@Input](../component/angular/input.md)
   + [attrs](./angular/attrs.md)
   + [内容投影](./angular/ng-content.md)
-  + @Output
+  + [@Output](./angular/output.md)
   + Service
   + 状态管理
 

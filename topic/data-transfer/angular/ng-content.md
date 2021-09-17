@@ -93,4 +93,4 @@ Github: <https://github.com/LearnShare/vra-angular/tree/10.ng-content>
 ## 继续阅读
 
 + 上一节: [attrs](./attrs.md)
-+ 下一节:
++ 下一节: [@Output](./output.md)

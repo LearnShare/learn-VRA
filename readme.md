@@ -375,7 +375,9 @@ Why not.
       <td>
         <a href="./topic/data-transfer/react/func-props.md">模拟事件语法</a>
       </td>
-      <td>@Output</td>
+      <td>
+        <a href="./topic/data-transfer/angular/output.md">@Output</a>
+      </td>
     </tr>
     <tr>
       <td>?</td>
