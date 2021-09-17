@@ -24,6 +24,7 @@
 + React
   + [props](../component/react/props.md)
   + [props.children 和 Render Props](./react/render-props.md)
+  + [模拟事件语法](./react/func-props.md)
   + Context
   + 状态管理
 + Angular
@@ -31,6 +32,7 @@
   + [attrs](./angular/attrs.md)
   + [内容投影](./angular/ng-content.md)
   + @Output
+  + Service
   + 状态管理
 
 ## 继续阅读

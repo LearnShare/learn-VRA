@@ -149,7 +149,7 @@ Why not.
         <a href="./topic/component/react/component.md">创建和使用组件</a>
       </td>
       <td>
-        <a href="./topic/component/react/angular.md">创建、注册和使用组件</a>
+        <a href="./topic/component/angular/component.md">创建、注册和使用组件</a>
       </td>
     </tr>
     <tr>
@@ -372,7 +372,9 @@ Why not.
       <td>
         <a href="./topic/data-transfer/vue/emit.md">$emit</a>
       </td>
-      <td>-</td>
+      <td>
+        <a href="./topic/data-transfer/react/func-props.md">模拟事件语法</a>
+      </td>
       <td>@Output</td>
     </tr>
     <tr>

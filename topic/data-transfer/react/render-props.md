@@ -106,4 +106,4 @@ Github: <https://github.com/LearnShare/vra-react/tree/09.render-props>
 ## 继续阅读
 
 + 上一节: [跨组件数据传递](../readme.md)
-+ 下一节:
++ 下一节: [模拟事件语法](./func-props.md)
