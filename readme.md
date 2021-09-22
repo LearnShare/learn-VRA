@@ -380,8 +380,10 @@ Why not.
       </td>
     </tr>
     <tr>
-      <td>?</td>
-      <td>Provide/Inject</td>
+      <td>局部共享</td>
+      <td>
+        <a href="./topic/data-transfer/vue/provide-inject.md">Provide/Inject</a>
+      </td>
       <td>Context</td>
       <td>Service</td>
     </tr>

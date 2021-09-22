@@ -58,7 +58,7 @@ app.component.html:
     (change)="toggleOnChange($event)"></app-toggle-button>
 ```
 
-绑定自定义事件的语法并么有什么特殊，只不过 `$event` 对应的不再是 DOM 事件，而是自定义方法发送的数据。
+绑定自定义事件的语法并么有什么特殊，只不过 `$event` 对应的不再是 DOM 事件，而是自定义事件发送的数据。
 
 ## 最终代码
 

@@ -150,4 +150,4 @@ Github: <https://github.com/LearnShare/vra-vue/tree/13.emit>
 ## 继续阅读
 
 + 上一节: [slot](./slot.md)
-+ 下一节:
++ 下一节: [Provide/Inject](./provide-inject.md)
