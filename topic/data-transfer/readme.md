@@ -25,7 +25,7 @@
   + [props](../component/react/props.md)
   + [props.children 和 Render Props](./react/render-props.md)
   + [模拟事件语法](./react/func-props.md)
-  + Context
+  + [Context](./react/context.md)
   + 状态管理
 + Angular
   + [@Input](../component/angular/input.md)

@@ -73,4 +73,4 @@ Github: <https://github.com/LearnShare/vra-react/tree/10.func-props>
 ## 继续阅读
 
 + 上一节: [props.children 和 Render Props](./render-props.md)
-+ 下一节:
++ 下一节: [Context](./context.md)

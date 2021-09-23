@@ -117,6 +117,8 @@ this.setState((oldState, oldProps) => {}, callback?);
 
 **注意**：当需要基于当前的 state 和 props 更新数据时，请使用第二种方法。
 
+**注意**：第二种 setState 中的方法应当是“pure functions”，也就是多次执行结果均相同，且无其他副作用。参考 [React.StrictMode causes setState to fire twice](https://github.com/facebook/react/issues/12856)。
+
 ## 最终代码
 
 Github: <https://github.com/LearnShare/vra-react/tree/07.data>

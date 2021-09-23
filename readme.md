@@ -384,7 +384,9 @@ Why not.
       <td>
         <a href="./topic/data-transfer/vue/provide-inject.md">Provide/Inject</a>
       </td>
-      <td>Context</td>
+      <td>
+        <a href="./topic/data-transfer/react/context.md">Context</a>
+      </td>
       <td>Service</td>
     </tr>
     <tr>
