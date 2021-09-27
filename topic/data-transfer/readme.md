@@ -32,7 +32,7 @@
   + [attrs](./angular/attrs.md)
   + [内容投影](./angular/ng-content.md)
   + [@Output](./angular/output.md)
-  + Service
+  + [Service](./angular/service.md)
   + 状态管理
 
 ## 继续阅读
