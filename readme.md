@@ -395,7 +395,9 @@ Why not.
       <td>
         <a href="./topic/data-transfer/state-management.md">状态管理</a>
       </td>
+      <td>
         <a href="./topic/data-transfer/vue/vuex.md">Vuex</a>
+      </td>
       <td>Redux</td>
       <td>RxJS</td>
     </tr>
