@@ -19,6 +19,7 @@
 
 + @vue/cli: 4.5.13
 + Vue: 3.*
++ Vuex: 4.*
 + create-react-app: 4.0.3
 + React: 17.*
 + @angular/cli: 12.1.4

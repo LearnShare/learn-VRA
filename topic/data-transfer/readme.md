@@ -20,20 +20,20 @@
   + [slot](./vue/slot.md)
   + [自定义事件](./vue/emit.md)
   + [Provide/Inject](./vue/provide-inject.md)
-  + 状态管理
+  + [Vuex](./vue/vuex.md)
 + React
   + [props](../component/react/props.md)
   + [props.children 和 Render Props](./react/render-props.md)
   + [模拟事件语法](./react/func-props.md)
   + [Context](./react/context.md)
-  + 状态管理
+  + [Redux](./react/redux.md)
 + Angular
   + [@Input](../component/angular/input.md)
   + [attrs](./angular/attrs.md)
   + [内容投影](./angular/ng-content.md)
   + [@Output](./angular/output.md)
   + [Service](./angular/service.md)
-  + 状态管理
+  + [NgRx](./angular/ngrx.md)
 
 ## 继续阅读
 
