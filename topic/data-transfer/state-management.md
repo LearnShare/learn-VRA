@@ -43,9 +43,9 @@ Flux 本身有其官方实现 [flux](https://github.com/facebook/flux)，它也�
 
 ## 最佳实践
 
-+ 状态管理应当只用来处理复杂的跨组件数据共享。
++ 状态管理应当只用来处理复杂的跨组件数据共享。  
   如果应用逻辑不太复杂，Provide-Inject/Context/Service 能够满足需求，且代码易读易维护的时候，应当避免使用状态管理。
-+ 状态管理应当只负责数据的存储、修改、共享和分发，不应该包含任何副作用、异步过程和其他多余操作。
++ 状态管理应当只负责数据的存储、修改、共享和分发，不应该包含任何副作用、异步过程和其他多余操作。  
   绝不能将接口请求、数据缓存等逻辑放在状态管理模块中。
 
 ## 本节的子主题
@@ -55,4 +55,4 @@ Flux 本身有其官方实现 [flux](https://github.com/facebook/flux)，它也�
 + React
   + [Redux](./react/redux.md)
 + Angular
-  + [NgRx](./angular/ngrx.md)
+  + [RxJS](./angular/rxjs.md)

@@ -1,10 +1,23 @@
 # Vuex
 
-## 核心概念
+专门为 Vue 开发的状态管理库。
 
-### Store
++ [Vuex](https://next.vuex.vuejs.org/)
 
-Vuex 的唯一接口，用于创建数据仓库实例。每个 Vue 应用中仅需要一个 Store 实例，它作为全局顶级的数据仓库。
+Vuex 的核心概念：
+
++ Store: 数据仓库
++ State: 数据在特定时刻的值
++ Getters: 获取数据
++ Mutations: 修改数据
++ Actions: 执行某些操作，并触发 Mutations
++ Modules: 子模块
+
+## Store
+
+数据仓库，用于存储数据，并提供获取数据、修改数据和监听数据变化的接口。
+
+每个 Vue 应用中仅需要一个 Store 实例，作为全局顶级的数据仓库。
 
 ```js
 // src/store/index.js
@@ -45,13 +58,13 @@ export default store;
 + strict
 + devtools
 
-### State
+## State
 
-Store 中存储的数据。
+Store 中存储的数据在特定时刻（初始化，及修改前后）的值。
 
 在 `createStore()` 中声明的为初始数据，在 `getters`/`mutations` 方法中提供的 `state` 参数为当前数据。
 
-#### 访问数据
+### 访问数据
 
 1\. store.state
 
@@ -110,9 +123,9 @@ computed: {
 },
 ```
 
-### Getters
+## Getters
 
-类似于组件的 computed 属性，用于完成自动计算并返回结果。
+获取数据的另一种方法，类似于组件的 computed 属性，可以完成自动计算并返回结果。
 
 ```js
 getters: {
@@ -144,7 +157,7 @@ getters: {
 },
 ```
 
-#### 访问 Getters
+### 访问 Getters
 
 Store 中的 Getters 都会出现在 store.getters 对象中：
 
@@ -169,7 +182,7 @@ computed: {
 },
 ```
 
-### Mutations
+## Mutations
 
 Mutations 是修改 Store 中数据的唯一方法。
 
@@ -195,7 +208,7 @@ Mutations 方法有两个可选参数：
 
 Mutations 按方法名称进行匹配，方法必须是同步的。
 
-#### 触发 Mutations
+### 触发 Mutations
 
 可以在组件中使用 `store.commit()` 触发 Mutations，对数据进行更改：
 
@@ -226,7 +239,7 @@ methods: {
 },
 ```
 
-### Actions
+## Actions
 
 Actions 用于执行某个动作，并提交 Mutations。其中可以包含异步操作或其他副作用，但建议尽量避免这种操作。
 
@@ -271,7 +284,7 @@ Actions 方法有两个可选参数：
   + dispatch: store.dispatch
 + payload: 通过 store.dispatch 提交的数据
 
-#### 触发 Actions
+### 触发 Actions
 
 类似于 `store.commit()`，可以在组件中使用 `store.dispatch()` 触发 Actions：
 
@@ -295,7 +308,7 @@ methods: {
 },
 ```
 
-### Mudules
+## Mudules
 
 某些项目中，Store 模块的数据和逻辑可能会很多很复杂，导致代码难以维护。此时，可以将 Store 分为多个子模块。
 
@@ -335,13 +348,14 @@ const store = createStore({
 + getters 会有第三个参数 `rootState`，代表跟模块的数据
 + actions 的首个参数 `context` 会额外提供 `rootState`/`rootGetters`，代表跟模块的数据
 
-#### 访问和使用
+### 访问和使用
 
-+ 'State/Getters': `store.state.menu.*`
++ 'State': `store.state.menu.*`
++ 'Getters': `store.getters.*`
 + 'Mutations': `store.commit('type')`
 + 'Actions': `store.dispatch('type')`
 
-#### 命名空间
+### 命名空间
 
 为了更清晰地区分不同子模块中的数据和方法名称，可以为子模块开启命名空间：
 
@@ -383,7 +397,7 @@ mapActions([
 ])
 ```
 
-#### 动态注册模块
+### 动态注册模块
 
 可以在应用中按需注册新的模块：
 
@@ -399,5 +413,5 @@ Github: <https://github.com/LearnShare/vra-vue/tree/15.vuex>
 
 ## 继续阅读
 
-+ 上一节: [Provide/Inject](./provide-inject.md)
-+ 下一节: [props](../../component/react/props.md)
++ 上一节: [状态管理](../state-management.md)
++ 下一节: [Redux](../react/redux.md)

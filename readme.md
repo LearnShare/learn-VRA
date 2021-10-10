@@ -398,8 +398,12 @@ Why not.
       <td>
         <a href="./topic/data-transfer/vue/vuex.md">Vuex</a>
       </td>
-      <td>Redux</td>
-      <td>RxJS</td>
+      <td>
+        <a href="./topic/data-transfer/react/redux.md">Redux</a>
+      </td>
+      <td>
+        <a href="./topic/data-transfer/angular/rxjs.md">RxJS</a>
+      </td>
     </tr>
   </tbody>
 </table>
