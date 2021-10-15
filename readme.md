@@ -402,7 +402,7 @@ Why not.
         <a href="./topic/data-transfer/react/redux.md">Redux</a>
       </td>
       <td>
-        <a href="./topic/data-transfer/angular/rxjs.md">RxJS</a>
+        <a href="./topic/data-transfer/angular/ngrx.md">NgRx</a>
       </td>
     </tr>
   </tbody>

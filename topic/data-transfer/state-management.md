@@ -55,4 +55,4 @@ Flux 本身有其官方实现 [flux](https://github.com/facebook/flux)，它也�
 + React
   + [Redux](./react/redux.md)
 + Angular
-  + [RxJS](./angular/rxjs.md)
+  + [NgRx](./angular/ngrx.md)

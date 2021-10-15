@@ -39,12 +39,12 @@ const initialState = {
 
 function mainReducer(state = initialState, action) {
   switch (action.type) {
-    case 'setToken':
+    case 'set-token':
       return {
         ...state,
         token: action.token,
       };
-    case 'setUserData':
+    case 'set-userdata':
       return {
         ...state,
         userData: action.userData,
@@ -72,11 +72,11 @@ createStore(reducer, preloadedState?, enhancer?)
 
 参数：
 
-+ reducer: 一般方法，根据传入的数据返回新的 state。参数：
-  + state: 当前的 state
-  + action: 数据对象
-+ preloadedState: 初始 state
-+ enhancer: 可使用 `applyMiddleware()` 方法添加中间件
++ `reducer`: 一般方法，根据传入的数据返回新的 state。参数：
+  + `state`: 当前的 state
+  + `action`: 数据对象
++ `preloadedState`: 初始 state
++ `enhancer`: 可使用 `applyMiddleware()` 方法添加中间件
 
 #### 中间件
 
@@ -88,7 +88,7 @@ applyMiddleware(...middleware)
 
 参数：
 
-+ middleware: 一个或多个中间件
++ `middleware`: 一个或多个中间件
 
 中间件可以接收 Store 的 `dispatch` 和 `getState` 作为命名参数，并返回另一个函数。  
 返回的函数接收一个 `next` 参数，它是 middleware 的 dispatch 方法。然后返回另一个函数。  
@@ -186,11 +186,11 @@ store.dispatch({
 });
 ```
 
-#### Action Creater
+#### Action Creator
 
 在不同地方重复编写 Action 是比较麻烦的，容易出错，而且也不利于后期维护。
 
-"Action Creater" 是一个创建并返回 Action 对象的方法，使用它可以避免很多麻烦：
+"Action Creator" 是一个创建并返回 Action 对象的方法，使用它可以避免很多麻烦：
 
 ```js
 // src/store/action.js
