@@ -145,7 +145,7 @@ const router = createRouter({
 选项参数：
 
 + `history`: 设置 URL 的模式，支持两种方式：
-  + `createWebHistory()`: 使用 path，如 'http://myweb.com/login'。通常建议使用这种方式，但需要对服务器进行特殊配置。
+  + `createWebHistory()`: 使用 path，如 'http://myweb.com/login' 。通常建议使用这种方式，但需要对服务器进行特殊配置。
   + `createWebHashHistory()`: 使用 hash，如 'http://myweb.com/#/login'
 + `routes`: 路由映射配置列表。配置选项包括：
   + `path`: 以 '/' 开头的路径或路径匹配规则
@@ -234,7 +234,7 @@ createWebHashHistory('/store');
   path: '/:any(.*)'
   ```
 
-可以使用 `this.$route.params` 获取 URL 中的动态参数，参考 [$route.params](#params)。
+可以使用 `this.$route.params` 获取 URL 中的动态参数，参考 [this.$route](#this.$route)。
 
 #### 匹配和精确匹配
 
@@ -386,7 +386,7 @@ createWebHashHistory('/store');
 
 #### 导航守卫
 
-导航守卫允许在导航执行的特殊时刻执行一个方法，可以在该方法中记录导航前后的信息，返回其他的导航目标，或直接取消本次导航动作。
+导航守卫允许在导航执行的特殊时刻执行一个方法，可以在该方法中记录导航前后的信息，指定新的的导航目标，或直接取消本次导航动作。
 
 导航守卫方法接收两个参数：
 
@@ -433,10 +433,10 @@ router.beforeEach(() => {
 
 + `name`: 路由名称
 + `params`: 路径中的参数对象
-+ `path`: 当前路径，包含 `hash`
-+ `fullPath`: 完整路径，包含 `hash` 和 `query`
 + `hash`: URL 中 # 及后面的部分
 + `query`: query 参数对象
++ `path`: 当前路径，包含 `hash`
++ `fullPath`: 完整路径，包含 `hash` 和 `query`
 + `meta`: 路由中的 `meta` 数据
 + `matched`: 当前匹配的路由列表
 + `redirectedFrom`: 重定向来源
