@@ -56,3 +56,8 @@ Flux 本身有其官方实现 [flux](https://github.com/facebook/flux)，它也�
   + [Redux](./react/redux.md)
 + Angular
   + [NgRx](./angular/ngrx.md)
+
+## 继续阅读
+
++ 上一节: [跨组件数据传递](./readme.md)
++ 下一节: [路由](../router/readme.md)

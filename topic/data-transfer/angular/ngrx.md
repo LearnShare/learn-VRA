@@ -182,7 +182,6 @@ Reducers 用于根据 Action 处理数据更新。
 import {
   createReducer,
   on,
-  Action,
 } from '@ngrx/store';
 
 // 1. 引入 Actions
