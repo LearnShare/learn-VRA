@@ -103,7 +103,7 @@ React Router 应用的核心，通常会把它放在组件树靠顶部的位置�
 
 #### 路径匹配规则
 
-React Router 使用 [path-to-regexp](https://github.com/pillarjs/path-to-regexp) 解析路径，它支持几位灵活的路径匹配规则：
+React Router 使用 [path-to-regexp](https://github.com/pillarjs/path-to-regexp) 解析路径，它支持非常灵活的路径匹配规则：
 
 ```js
 // 1. 按路径完整匹配
@@ -122,8 +122,8 @@ path: '/user/:userId/image/:imageId'
 path: '/about'
 exact: true
 
-// /about => 精确匹配
-// /about/us => 非精确匹配
+// /about => 匹配
+// /about/us => 不匹配
 ```
 
 `strict` 用于控制是否严格匹配尾部的 '/'，当设置为 `true` 时：
@@ -153,11 +153,10 @@ strict: true
   + `isExact`: 是否精确匹配
   + `path`: 当前路径
   + `url`: URL 中匹配的部分
-+ `location`: 
-  + ``: 
-  + ``: 
-  + ``: 
-  + ``: 
++ `location`: URL 中的数据
+  + `pathname`: 当前路径
+  + `search`: 查询字符串，包含 '?'
+  + `hash`: hash，包含 '#'
 + `history`: 类似于 [window.history](https://developer.mozilla.org/en-US/docs/Web/API/History) 的属性和接口
   + `length`: 历史记录的数量
   + `push()/go()/goBack()/goForward()/replace()`: 手动导航/前进后退
