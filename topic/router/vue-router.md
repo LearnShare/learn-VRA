@@ -101,7 +101,7 @@ const PageSettings = () => import('@/pages/settings/index.vue');
 + `<router-view>`: 根据路由配置渲染对应的组件
 + `<router-link>`: 路由链接，用于精确控制路由跳转
 
-### <router-view>
+### \<router-view\>
 
 `<router-view>` 组件会根据路由配置选择对应的组件，并将它渲染出来。可以把它放在任意组件的模板中，但通常应用中只有一个路由模块，也只有一个 `<router-view>` 组件。
 
@@ -109,7 +109,7 @@ const PageSettings = () => import('@/pages/settings/index.vue');
 
 在嵌套路由中，可以使用更多 `<router-view>` 来渲染子路由对应的组件，参考 [嵌套路由](#嵌套路由)。
 
-### <router-link>
+### \<router-link\>
 
 `<router-link>` 组件可以替代 `<a>` 元素，用于精确控制路由跳转。可用属性：
 

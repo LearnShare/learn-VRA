@@ -49,7 +49,7 @@ export default App;
 
 ## 路由组件
 
-### <BrowserRouter> 和 <HashRouter>
+### \<BrowserRouter\> 和 \<HashRouter\>
 
 React Router 应用的核心，通常会把它放在组件树靠顶部的位置。二者的区别是 URL 的模式不同：
 
@@ -68,7 +68,7 @@ React Router 应用的核心，通常会把它放在组件树靠顶部的位置�
     + `noslash`: 'http://myweb.com/#login'
     + `hashbang`: 'http://myweb.com/#!/login'
 
-### <Switch> 和 <Route>
+### \<Switch\> 和 \<Route\>
 
 类似于 `switch...case`，`<Switch>` 会从前往后逐个检查，渲染第一个匹配的 `<Route>`，并忽略后面的 `<Route>`。
 
@@ -164,7 +164,7 @@ strict: true
   + `action`: 当前动作
   + `block()`: 禁止导航
 
-### <Link> 和 <NavLink>
+### \<Link\> 和 \<NavLink\>
 
 `<Link>` 和 `<NavLink>` 组件可以替代 `<a>` 元素，用于精确控制路由跳转。可用属性：
 
@@ -187,7 +187,7 @@ strict: true
   + `match`: 当前是否匹配
   + `location`: 当前的 `location`
 
-### <Redirect>
+### \<Redirect\>
 
 `<Redirect>` 组件用于重定向到新的路由，有两种用法：
 
