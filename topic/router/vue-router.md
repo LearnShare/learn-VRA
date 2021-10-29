@@ -1,5 +1,7 @@
 # Vue Router
 
++ [Vue Router](https://next.router.vuejs.org/zh/)
+
 Vue Router 是 Vue 的官方路由库。
 
 ## 路由实例
@@ -109,7 +111,7 @@ const PageSettings = () => import('@/pages/settings/index.vue');
 
 ### <router-link>
 
-`<router-link>` 组件可以替代 `<a>` 元素，用于精确控制路由跳转。可用参数：
+`<router-link>` 组件可以替代 `<a>` 元素，用于精确控制路由跳转。可用属性：
 
 + `to`: 跳转目标，支持两种方式：
   + 'path': 跳转路径（可包含查询参数），如 '/about'，'/login?redirect=/home'
@@ -234,7 +236,7 @@ createWebHashHistory('/store');
   path: '/:any(.*)'
   ```
 
-可以使用 `this.$route.params` 获取 URL 中的动态参数，参考 [this.$route](#this.$route)。
+可以使用 `this.$route.params` 获取 URL 中的动态参数，参考 [this.$route](#thisroute)。
 
 #### 匹配和精确匹配
 
@@ -460,4 +462,4 @@ Github: <https://github.com/LearnShare/vra-vue/tree/16.router>
 ## 继续阅读
 
 + 上一节: [路由](./readme.md)
-+ 下一节:
++ 下一节: [React Router](./react-router.md)
