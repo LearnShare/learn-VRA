@@ -2,38 +2,35 @@
 
 ## 项目结构
 
-在[上一节](./vue-cli.md)中，我们使用 Vue CLI 创建并运行了了 `vra-vue` 项目。
+在[上一节](./vite.md)中，我们创建并运行了 `vra-vue` 项目。
 
 来看一下项目的结构：
 
 ```
 vra-vue/
+  .vscode/        // vscode 相关配置
+  .e2e/           // 端到端（Playwrite）相关配置和测试脚本
   node_modules/
-  public/
-    favicon.ico
-    index.html    // 页面入口
+  public/         // 静态文件目录
   src/
-    assets/       // 图片、字体等资源
-    components/   // Vue 组件
-      HelloWorld.vue
+    assets/       // 图片及 CSS 资源
+    components/   // 组件及测试代码
     router/       // Vue Router 路由配置
-    store/        // Vuex 状态管理配置
-    views/        // 页面入口
-      About.vue
-      Home.vue
+    store/        // Pinia 状态管理配置
+    views/        // 页面
     App.vue       // Vue 根组件
-    main.js       // 应用配置和启动
-  tests/          // 测试代码
-  .browserslistrc // Browserslist 配置
-  .editorconfig   // EditorConfig 配置
+    main.js       // 应用配置和启动代码
   .eslintrc.js    // ESLint 配置
   .gitignore
-  babel.config.js // Babel 配置
-  jest.config.js  // Jest 配置
-  LICENSE
-  package-lock.json
+  env.d.ts
+  index.html            // 页面入口
   package.json
+  playwrite.config.ts   // Playwrite 配置文件
+  pnpm-lock.yaml
   README.md
+  tsconfig*.json        // TypeScript 配置文件
+  vite.config.ts        // Vite 配置文件
+  vitest.config.ts      // Vitest 配置文件
 ```
 
 ## 代码风格调整
@@ -41,17 +38,13 @@ vra-vue/
 为了符合 [代码风格](../development-environment.md#代码风格) 的要求，进行如下调整：
 
 1. 修改文件名及相关代码
-  ```
-  src/components/HelloWorld.vue => src/components/hello-world.vue
-  src/views/About.vue => src/views/about.vue
-  src/views/Home.vue => src/views/home.vue
-  src/App.vue => src/app.vue
-  ```
-2. 修改 .editorconfig
+  1. 路径及文件名使用小写字母和 `-`
+  2. 省略路径和文件名重复的部分（如 `views/HomeView.vue` -> `views/home.vue`）
+2. 在根目录创建 .editorconfig 文件
   ```
   root = true
 
-  [*.{js,vue,html,css,scss}]
+  [*.{js,ts,vue,html,css,scss}]
   charset = utf-8
   indent_style = space
   indent_size = 2
@@ -65,8 +58,6 @@ vra-vue/
 ## 最终代码
 
 Github: <https://github.com/LearnShare/vra-vue/tree/00.vue-create>
-
-在线预览: <https://codesandbox.io/s/vra-vue-00vue-create-d39hz>
 
 ## 继续阅读
 

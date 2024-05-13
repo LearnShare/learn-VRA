@@ -4,7 +4,7 @@
 
 在 [属性绑定](./template/bind.md) 中，我们已经了解了绑定元素 `style` 属性的方法：
 
-```vue
+``` vue
 <template>
   <h2>1. inline style</h2>
   <p
@@ -41,7 +41,7 @@ export default {
 
 渲染出的 HTML：
 
-```html
+``` html
 <h2>1. inline style</h2>
 <p style="font-size: 16px;">inline style object</p>
 <p style="font-size: 16px; color: rgb(170, 170, 255);">style object from data</p>
@@ -54,7 +54,7 @@ export default {
 
 src/components/demo-style.vue:
 
-```vue
+``` vue
 <template>
   <h2>2. style with class</h2>
   <p class="error">error message</p>
@@ -85,9 +85,9 @@ export default {
 </style>
 ```
 
-main.js:
+main.ts:
 
-```js
+``` ts
 import { createApp } from 'vue';
 
 import 'bootstrap/dist/css/bootstrap.css';
@@ -105,11 +105,11 @@ createApp(App).mount('#app');
 
 ## 使用其他语言
 
-Vue CLI 创建的项目稍加配置，即可支持 CSS 预处理器，参考 [Vue CLI Guide: 预处理器](https://cli.vuejs.org/zh/guide/css.html#预处理器)。
+Vite 项目稍加配置，即可支持 CSS 预处理器，参考 [Vite: CSS 预处理器](https://cn.vitejs.dev/guide/features.html#css-pre-processors)。
 
-可以在 JS 中直接引入样式文件：
+可以在 TS 中直接引入样式文件：
 
-```js
+``` ts
 import 'style.scss';
 ```
 
@@ -128,7 +128,7 @@ import 'style.scss';
 
 src/components/demo-style.vue:
 
-```vue
+``` vue
 <style>
 .error {
   color: red;
@@ -138,7 +138,7 @@ src/components/demo-style.vue:
 
 编译后的样式：
 
-```html
+``` html
 <style type="text/css">
 .error {
   color: red;
@@ -148,7 +148,7 @@ src/components/demo-style.vue:
 
 为了避免不必要的全局样式出现，可以使用 `scoped` 属性将样式的作用域限制到组件内：
 
-```vue
+``` vue
 <p class="error">error message</p>
 
 <style
@@ -161,7 +161,7 @@ src/components/demo-style.vue:
 
 编译后的代码：
 
-```html
+``` html
 <style type="text/css">
 .error[data-v-77894bd7] {
   color: red;
@@ -171,15 +171,13 @@ src/components/demo-style.vue:
 <p class="error" data-v-77894bd7="">error message</p>
 ```
 
-Vue Loader 会对这类样式进行特殊处理，参考 [Vue Loader Guide: Scoped CSS](https://vue-loader.vuejs.org/zh/guide/scoped-css.html)。
-
 ### 深度匹配
 
 有时候会需要在父组件中覆盖子组件的样式，但如果父组件使用了局部作用域的样式，其中的样式就无法应用到子组件了。
 
-深度匹配 `>>>` 可以帮助我们实现这一需求：
+深度匹配 `:deep()` 可以帮助我们实现这一需求：
 
-```vue
+``` vue
 // 1. 默认写法
 <style
     lang="scss"
@@ -197,7 +195,7 @@ Vue Loader 会对这类样式进行特殊处理，参考 [Vue Loader Guide: Scop
 <style
     lang="scss"
     scoped>
-.parent::v-deep {
+:deep(.parent) {
   color: #333;
 
   .children {
@@ -227,15 +225,13 @@ Vue Loader 会对这类样式进行特殊处理，参考 [Vue Loader Guide: Scop
 }
 ```
 
-SCSS/SASS 中无法解析 `>>>`，可以使用 `/deep/` 或 `::v-deep`。
-
 ## CSS Modules
 
-[CSS Modules](https://github.com/css-modules/css-modules) 是一种流行的 CSS 使用方式。
+Vite 也支持 [CSS Modules](https://github.com/css-modules/css-modules)。
 
 ### 在单文件组件中声明和使用
 
-```vue
+``` vue
 <template>
   <h2>3. css modules</h2>
   <p
@@ -259,7 +255,7 @@ export default {
 
 ### 引入外部 CSS 模块
 
-```vue
+``` vue
 <template>
   <p
       :class="darkStyles.dark">dark</p>
@@ -283,8 +279,6 @@ export default {
 ## 最终代码
 
 Github: <https://github.com/LearnShare/vra-vue/tree/07.style>
-
-在线预览: <https://codesandbox.io/s/vra-vue-07-style-kb1rs>
 
 ## 继续阅读
 

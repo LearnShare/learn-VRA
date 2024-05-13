@@ -2,7 +2,7 @@
 
 Vue 也提供了用于循环的指令，可以基于数组等数据重复渲染部分模板。
 
-```vue
+``` vue
 <template>
   <h2>4. for/key</h2>
   <ul>
@@ -65,7 +65,7 @@ export default {
 
 渲染出的 HTML:
 
-```html
+``` html
 <h2>4. for/key</h2>
 <ul>
   <li>1</li>
@@ -91,7 +91,7 @@ export default {
 
 `v-for` 用于重复渲染部分模板内容，其数据可以是数组、对象、数值、文本或其他可迭代数据：
 
-```js
+```
 // 数值
 v-for="number in 3" // 1 2 3
 
@@ -116,7 +116,7 @@ v-for="(value, key, index) in dataObject"
 
 `v-for` 中声明的局部变量可以在当前元素/组件，以及子元素/组件中使用：
 
-```vue
+``` vue
 <template
     v-for="(value, key, index) in forData"
     :key="value.id">
@@ -130,7 +130,7 @@ v-for="(value, key, index) in dataObject"
 
 为了让 Vue 有效地跟踪 `v-for` 渲染出的每个元素，需要为元素添加 `key` 属性：
 
-```vue
+``` vue
 <li
     v-for="x in 3"
     :key="x">{{ x }}</li>
@@ -151,9 +151,9 @@ v-for="(value, key, index) in dataObject"
 
 ## \<template\>
 
-可以使用 `<template>` 作为 `v-for` 的容器，这样渲染内部的元素和组件，避免了多余的嵌套元素：
+可以使用 `<template>` 作为 `v-for` 的容器，这样只会渲染内部的元素和组件，避免了多余的嵌套元素：
 
-```vue
+``` vue
 <div>
   <template
       v-for="(value, key, index) in forData"
@@ -167,7 +167,7 @@ v-for="(value, key, index) in dataObject"
 
 渲染出的 HTML:
 
-```html
+``` html
 <div>
   <span>x: X</span>
   <br>
@@ -186,9 +186,7 @@ v-for="(value, key, index) in dataObject"
 
 ## 最终代码
 
-Github: <https://github.com/LearnShare/vra-vue/tree/04.event>
-
-在线预览: <https://codesandbox.io/s/vra-vue-04-event-20q67>
+Github: <https://github.com/LearnShare/vra-vue/tree/03.template>
 
 ## 继续阅读
 

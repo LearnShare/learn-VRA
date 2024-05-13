@@ -2,7 +2,7 @@
 
 Vue 组件的 data 选项声明了组件内部的数据。
 
-```js
+``` ts
 import {
   defineComponent,
 } from 'vue/dist/vue.esm-bundler';
@@ -32,7 +32,7 @@ export default ToggleButton;
 
 `data` 选项应当是一个方法，该方法返回一个数据对象：
 
-```js
+``` ts
 data() {
   return {
     //
@@ -42,7 +42,7 @@ data() {
 
 ## 定义数据
 
-```js
+``` ts
 data() {
   return {
     a: 1,
@@ -63,7 +63,7 @@ data() {
 
 在模板中访问时，可以直接直接使用各个属性 `key`：
 
-```vue
+``` vue
 <template>
   <p>{{ a + b }}</p>
   <p>{{ formatDateTime(now) }}</p>
@@ -72,7 +72,7 @@ data() {
 
 在 JavaScript 逻辑中访问时，直接访问和修改 `this.key`：
 
-```js
+``` ts
 {
   computed: {
     sum() {
@@ -95,8 +95,6 @@ data() {
 ## 最终代码
 
 Github: <https://github.com/LearnShare/vra-vue/tree/08.data>
-
-在线预览: <https://codesandbox.io/s/vra-vue-08-data-mqpp9>
 
 ## 继续阅读
 

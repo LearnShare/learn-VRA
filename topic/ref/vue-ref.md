@@ -1,6 +1,6 @@
 # 模板引用
 
-```vue
+``` vue
 <template>
   <h2>ref</h2>
   <input
@@ -34,7 +34,7 @@ export default {
 
 `ref` 属性用于指定引用的 ID，可以应用到 DOM 元素或自定义组件上，以获得 DOM 元素或组件实例的引用：
 
-```html
+``` vue
 <input
     type="text"
     name="username"
@@ -47,7 +47,7 @@ export default {
 + 引用 ID 应当是唯一的。
 + 当存在多个同名的引用时，只有最后一个元素会被引用。
 
-```vue
+``` vue
 <template>
   <ul>
     <li
@@ -68,7 +68,9 @@ export default {
 </script>
 ```
 
-在 Vue 2 中，`v-for` 中可以重复绑定引用 ID，引用的元素会保存至数组中。但 [Vue 3 不再支持这种方式](https://v3.cn.vuejs.org/guide/migration/array-refs.html)，可以使用下面的方式手动处理。
+在 Vue 2 中，`v-for` 中可以重复绑定引用 ID，引用的元素会保存至数组中。
+
+但 [Vue 3 不再支持这种方式](https://v3.cn.vuejs.org/guide/migration/array-refs.html)，可以使用下面的方式手动处理。
 
 ### :ref="func" 手动处理引用
 
@@ -109,7 +111,7 @@ export default {
 
 `ref` 属性可以绑定一个方法 `:ref="refItems"`：
 
-```js
+``` ts
 refItems(el) {
   this.listItems.push(el);
 },
@@ -119,12 +121,12 @@ refItems(el) {
 
 利用这种方法的一个例子：
 
-```vue
+``` vue
 <template>
   <input
       type="password"
       name="password"
-      :ref="autoHint">
+      :ref="autoHint" />
 </template>
 
 <script>
@@ -140,14 +142,14 @@ refItems(el) {
 
 ## this.$refs - 访问元素/组件
 
-`ref="refName"` 会在模板完成渲染后，自动绑定元素或组件到 `this.$refs.refName`。`ref="ref-name"` 则需要使用 `this.$refs['ref-name']` 访问。
+`ref="refName"` 会在模板完成渲染后，自动绑定元素或组件到 `this.$refs.refName`。
 
-```vue
+``` vue
 <template>
   <input
       type="text"
       name="username"
-      ref="usernameInput">
+      ref="usernameInput" />
 
   <hello-world
       msg="hello"
@@ -182,7 +184,7 @@ refItems(el) {
 
 hello-world.vue:
 
-```vue
+``` vue
 <template>
   <p>{{ muted ? '(muted)' : msg }}</p>
 </template>
@@ -212,8 +214,6 @@ export default {
 ## 最终代码
 
 Github: <https://github.com/LearnShare/vra-vue/tree/10.ref>
-
-在线预览: <https://codesandbox.io/s/vra-vue-10-ref-e12xm>
 
 ## 继续阅读
 

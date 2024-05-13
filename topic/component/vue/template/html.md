@@ -8,7 +8,7 @@
 
 插值用于将文本内容添加到模板中。
 
-```vue
+``` vue
 <template>
   <h2>1. HTML</h2>
   <p>{{ msg }}</p>
@@ -37,7 +37,7 @@ export default {
 
 渲染出的 HTML:
 
-```html
+``` html
 <h2>1. HTML</h2>
 <p>value from data</p>
 <p>a + b = 3</p>
@@ -57,8 +57,6 @@ export default {
 ## 最终代码
 
 Github: <https://github.com/LearnShare/vra-vue/tree/03.template>
-
-在线预览: <https://codesandbox.io/s/vra-vue-03-template-lqm4l>
 
 ## 继续阅读
 

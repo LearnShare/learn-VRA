@@ -9,7 +9,7 @@ Vue 提供了 [computed](../data/computed)，用于完成数据的自动跟踪�
 
 `watch` 提供了监听数据变化和执行自定义操作的功能。
 
-```vue
+``` vue
 <template>
   <h2>watch</h2>
   <div>汉堡: {{ number }}</div>
@@ -60,7 +60,7 @@ export default {
 
 可以监听 `data` `props` 和 `computed` 中的数据，当数据发生变化时执行对应的方法：
 
-```js
+``` ts
 watch: {
   // 监听单个数据
   // newValue: 变化后的值
@@ -144,7 +144,7 @@ unwatch();
 
 对于上面的例子，我们可以通过 `computed` 方法自动完成：
 
-```js
+``` ts
 export default {
   name: 'DemoFunc',
   data() {
@@ -175,8 +175,6 @@ export default {
 ## 最终代码
 
 Github: <https://github.com/LearnShare/vra-vue/tree/09.func>
-
-在线预览: <https://codesandbox.io/s/vra-vue-09-func-6uq9z>
 
 ## 继续阅读
 

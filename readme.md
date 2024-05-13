@@ -6,6 +6,7 @@ Why not.
 
 + 同时学习 Vue、React 和 Angular
 + 同步学习三者相同/相关的知识
++ 全面切换为 TypeScript
 + 融合以往的项目经验
 + 尽量涉及更多、更广的内容
 
@@ -13,10 +14,6 @@ Why not.
 
 1. 将学习内容记录到文档中（编写为 Markdown 存放在本项目中）
 2. 将练习代码保存下来（存放在 Github 中，按主题独立分支）
-3. 将 demo 呈现在 <https://codesandbox.io/> 上
-4. 按日总结并更新
-
-**注意**：<https://codesandbox.io/> 上 demo 的呈现效果可能与本地不同，强烈建议 clone 到本地运行和测试。
 
 ## 交流讨论
 
@@ -52,9 +49,9 @@ Why not.
       <td rowspan="5">
         <a href="./topic/hello-world/readme.md">Hello World</a>
       </td>
-      <td>CLI、创建和运行项目</td>
+      <td>创建和运行项目</td>
       <td>
-        <a href="./topic/hello-world/vue/vue-cli.md">Vue CLI</a>
+        <a href="./topic/hello-world/vue/vite.md">Vite</a>
       </td>
       <td>
         <a href="./topic/hello-world/react/create-react-app.md">Create React App</a>
@@ -77,7 +74,9 @@ Why not.
     </tr>
     <tr>
       <td>ESLint + Airbnb</td>
-      <td>-</td>
+      <td>
+        <a href="./topic/hello-world/vue/vra-vue-eslint.md">ESLint + Airbnb</a>
+      </td>
       <td>
         <a href="./topic/hello-world/react/vra-react-eslint.md">ESLint + Airbnb</a>
       </td>
@@ -87,7 +86,9 @@ Why not.
     </tr>
     <tr>
       <td>SCSS + dart-sass</td>
-      <td>-</td>
+      <td>
+        <a href="./topic/hello-world/vue/vra-vue-scss.md">SCSS + dart-sass</a>
+      </td>
       <td>
         <a href="./topic/hello-world/react/vra-react-scss.md">SCSS + dart-sass</a>
       </td>
@@ -104,18 +105,6 @@ Why not.
       <td>
         <a href="./topic/hello-world/angular/angular-hello-world.md">Hello World</a>
       </td>
-    </tr>
-    <tr>
-      <td colspan="2">
-        <a href="./topic/typescript/readme.md">使用 TypeScript</a>
-      </td>
-      <td>
-        <a href="./topic/typescript/vue.md">使用 TypeScript</a>
-      </td>
-      <td>
-        <a href="./topic/typescript/react.md">使用 TypeScript</a>
-      </td>
-      <td>-</td>
     </tr>
     <tr>
       <td colspan="2" rowspan="2">

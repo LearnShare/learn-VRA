@@ -2,7 +2,7 @@
 
 Vue 提供了处理事件的 `v-on` 指令，以及创建和触发自定义事件的能力。
 
-```vue
+``` vue
 <template>
   <h1>Event</h1>
   <div>
@@ -55,7 +55,7 @@ v-on:input="eventListener($event)"
 + 任意值
 + 任意变量
 
-```vue
+``` vue
 <template>
   <h1>Event</h1>
   <div>
@@ -101,11 +101,12 @@ export default {
 
 事件修饰符为事件绑定提供了更多扩展功能或限定条件：
 
-```vue
+``` vue
 <!-- 阻止默认行为 -->
 <button
     type="submit
     @click.prevent="submitForm">Submit</button>
+
 <!-- 限定触发的按键 -->
 <input
     type="text"
@@ -114,7 +115,7 @@ export default {
 
 参考：
 
-+ [Vue Guide: 事件修饰符](https://v3.cn.vuejs.org/guide/events.html#事件修饰符)
++ [Vue 事件处理: 事件修饰符](https://cn.vuejs.org/guide/essentials/event-handling.html#event-modifiers)
 
 ## 自定义事件
 
@@ -125,8 +126,6 @@ export default {
 ## 最终代码
 
 Github: <https://github.com/LearnShare/vra-vue/tree/04.event>
-
-在线预览: <https://codesandbox.io/s/vra-vue-04-event-20q67>
 
 ## 继续阅读
 

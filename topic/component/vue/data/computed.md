@@ -2,7 +2,7 @@
 
 `computed` 用于完成数据的自动跟踪和处理，如加减运算或列表过滤。
 
-```vue
+``` vue
 <template>
   <div class="computed">
     <p>sum: {{ sum }}</p>
@@ -96,7 +96,7 @@ export default {
 
 `computed` 是包含一个或多个方法的对象：
 
-```js
+``` ts
 computed: {
   // functions
 },
@@ -114,7 +114,7 @@ computed: {
 
 `computed` 也可以写作 getter/setter 组合的值：
 
-```js
+``` ts
 {
   data() {
     return {
@@ -137,8 +137,6 @@ computed: {
 ## 最终代码
 
 Github: <https://github.com/LearnShare/vra-vue/tree/08.data>
-
-在线预览: <https://codesandbox.io/s/vra-vue-08-data-mqpp9>
 
 ## 继续阅读
 

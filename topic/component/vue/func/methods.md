@@ -2,7 +2,7 @@
 
 在前面的例子中，我们已经体验了在 Vue 组件中声明和调用方法（或函数）：
 
-```js
+``` ts
 import {
   defineComponent,
 } from 'vue/dist/vue.esm-bundler';
@@ -32,7 +32,7 @@ export default ToggleButton;
 
 Vue 中的一般方法和事件处理方法都需要写在组件的 `methods` 选项中：
 
-```js
+``` ts
 methods: {
   func1() {
     this.func2('arg');
@@ -55,21 +55,21 @@ methods: {
 Vue 中调用/使用方法的方式有很多：
 
 1. 作为文本插值
-  ```vue
+  ``` vue
   {{ formatTime(item.createdAt) }}
   ```
 2. 作为事件处理方法
-  ```vue
+  ``` vue
   <button
       @click="toggleChecked">
   ```
 3. 作为值传递给子组件
-  ```vue
+  ``` vue
   <demo-children
       :func="addNumber" />
   ```
 4. 在其他方法、watch 或生命周期钩子中调用
-  ```js
+  ``` js
   mounted() {
     this.getData();
   },

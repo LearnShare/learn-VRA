@@ -4,7 +4,7 @@
 
 src/components/hello-world.vue:
 
-```vue
+``` vue
 <template>
   <h1>{{ msg }}</h1>
 </template>
@@ -29,7 +29,7 @@ h1 {
 
 文件中可以包含三个部分：
 
-```vue
+``` vue
 <template>
   <!-- 模板 -->
 </template>
@@ -47,18 +47,9 @@ h1 {
 
 脚本代码通常是 `JavaScript`，但也可以使用 `TypeScript`：
 
-```vue
+``` vue
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-
-@Options({
-  props: {
-    msg: String,
-  },
-})
-export default class HelloWorld extends Vue {
-  msg!: string
-}
+//
 </script>
 ```
 
@@ -72,13 +63,13 @@ export default class HelloWorld extends Vue {
 
 如果模板、脚本和样式堆在一起会让你抓狂，或者一个文件中包含了几百上千行代码，也可以把 JavaScript 和 CSS 分离到单独的文件中：
 
-```vue
+``` vue
 <template>
   <!-- 模板 -->
 </template>
 
 <script
-    src="./hello-world.js"></script>
+    src="./hello-world.ts"></script>
 
 <style
     src="./hello-world.css"></style>

@@ -1,13 +1,13 @@
 # 开发环境
 
-截止到 2021-08-02。
+截止到 2024-04-17。
 
 ## 开发工具
 
-+ Node.js: 14.17.4 LTS
-+ npm: 6.14.14
-+ Visual Studio Code: 1.58.2
-+ Google Chrome: 92
++ Node.js: 20.12.2 LTS
++ npm: 10.5.0, pnpm: 8.12.1
++ Visual Studio Code: 1.88.1
++ Google Chrome: 124
 + Git、Github 和 Sourcetree
 
 ## 代码风格
@@ -17,10 +17,8 @@
 
 ## 库和框架
 
-+ @vue/cli: 4.5.13
++ Vite: 5.*
 + Vue: 3.*
-+ Vuex: 4.*
-+ create-react-app: 4.0.3
 + React: 17.*
 + @angular/cli: 12.1.4
 + Angular: 12.*

@@ -6,7 +6,7 @@
 
 `props` 选项用于定义组件的外部数据，这些数据需要从外部传入。
 
-```js
+``` ts
 props: {
   msg: String,
 },
@@ -18,7 +18,7 @@ props: {
 
 ## 定义 props
 
-```js
+``` ts
 // 仅指定字段名称
 props: [
   'title',
@@ -61,7 +61,7 @@ props: {
 
 demo-children.vue:
 
-```js
+``` ts
 props: {
   defaultValue: {
     type: String,
@@ -78,7 +78,7 @@ props: {
 
 demo-parent.vue:
 
-```vue
+``` vue
 <template>
   <demo-children
       :numberValue="12"
@@ -130,7 +130,7 @@ export default {
 
 `props` 中定义的数据也可以在模板或 JavaScript 中使用。但与 `data` 不同的是，**`props` 中的数据是只读的**。
 
-```vue
+``` vue
 <template>
   <div class="demo-children">
     <p>defaultValue: {{ defaultValue }}</p>
@@ -190,8 +190,6 @@ export default {
 ## 最终代码
 
 Github: <https://github.com/LearnShare/vra-vue/tree/08.data>
-
-在线预览: <https://codesandbox.io/s/vra-vue-08-data-mqpp9>
 
 ## 继续阅读
 

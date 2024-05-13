@@ -17,7 +17,7 @@ Vue 中存在以下三种数据：
 
 模板不是只在组件初始化时渲染一次，而是会在数据发生变化后重新渲染：
 
-```vue
+``` vue
 <template>
   <p>now: {{ now }}</p>
   <p>datetime: {{ formatDateTime(now) }}</p>
@@ -74,8 +74,6 @@ Vue 会在 `now` 数据发生变化后，检查模板中对 `now` 的每一处�
 ## 最终代码
 
 Github: <https://github.com/LearnShare/vra-vue/tree/08.data>
-
-在线预览: <https://codesandbox.io/s/vra-vue-08-data-mqpp9>
 
 ## 继续阅读
 

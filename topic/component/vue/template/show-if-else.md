@@ -2,7 +2,7 @@
 
 Vue 提供了用于控制元素显示或隐藏的指令。
 
-```vue
+``` vue
 <template>
   <h2>3. show/hide</h2>
   <div>
@@ -39,7 +39,7 @@ export default {
 
 渲染出的 HTML:
 
-```html
+``` html
 <div>
   <span style="display: none;">A</span>
   <br>
@@ -51,7 +51,7 @@ export default {
 
 ## v-show
 
-从上面的例子可以看出，`v-show` 指令控制了元素是否包含行内样式 `display: none;`，从而控制了元素是否显示在页面中。
+从上面的例子可以看出，`v-show` 指令控制了元素是否包含行内样式 `display: none;`，从而控制元素是否显示在页面中。
 
 ## v-if/v-else-if/v-else
 
@@ -62,8 +62,6 @@ export default {
 ## 最终代码
 
 Github: <https://github.com/LearnShare/vra-vue/tree/03.template>
-
-在线预览: <https://codesandbox.io/s/vra-vue-03-template-lqm4l>
 
 ## 继续阅读
 

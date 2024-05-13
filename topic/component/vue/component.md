@@ -124,7 +124,7 @@ export default {
 
   // 生命周期钩子方法
 
-  // setup
+  // 组合式写法的入口
   setup() {}
 
   // 其他自定义属性/方法
@@ -133,7 +133,7 @@ export default {
 
 ## 注册组件
 
-目前我们了解了两种声明组件的方法：
+目前我们了解到两种声明组件的方法：
 
 + 配置式组件
 + 单文件组件
@@ -148,11 +148,11 @@ export default {
 
 ### 局部注册
 
-在组件中引用和注册其他组件，src/app.vue：
+在组件中引用和注册其他组件，`src/app.vue`：
 
 ```vue
 <template>
-  <hello-world msg="Hello World from Vue"/>
+  <hello-world msg="Hello World from Vue" />
 </template>
 
 <script>
@@ -186,9 +186,9 @@ components: {
 
 ### 全局注册
 
-在应用中可以全局注册组件，src/main.js：
+在应用中可以全局注册组件，`src/main.ts`：
 
-```js
+``` ts
 import { createApp } from 'vue';
 
 import ToggleButton from '@/components/toggle-button.js';
@@ -207,11 +207,11 @@ app.mount('#app');
 
 注册组件之后，可以在模板中使用。
 
-```vue
+``` vue
 <template>
   <HelloWorld msg="HelloWorld" />
   <hello-world msg="hello-world" />
-  <ni-hao msg="ni-hao"></ni-hao>
+  <ni-hao msg="ni-hao" />
 </template>
 
 <script>
@@ -229,7 +229,7 @@ export default {
 
 对于不需要包含内容的组件，可以不写结束标签，但开始标签必须包含 `/>` 作为结束：
 
-```vue
+``` vue
 <hello-world msg="hello-world" />
 ```
 
@@ -243,8 +243,6 @@ export default {
 ## 最终代码
 
 Github: <https://github.com/LearnShare/vra-vue/tree/06.component>
-
-在线预览: <https://codesandbox.io/s/vra-vue-06-component-b96f1>
 
 ## 继续阅读
 

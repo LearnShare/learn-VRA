@@ -4,7 +4,7 @@
 
 hello-world.vue:
 
-```vue
+``` vue
 <template>
   <div class="hello-world"></div>
 </template>
@@ -18,13 +18,13 @@ export default {
 
 demo-slot.vue:
 
-```html
+``` html
 <hello-world>hi there</hello-world>
 ```
 
 渲染出的 HTML：
 
-```html
+``` html
 <div class="hello-world"></div>
 ```
 
@@ -36,7 +36,7 @@ Vue 提供了 `<slot>` 元素，用于接收组件标签内编写的其他内容
 
 default-slot.vue:
 
-```html
+``` html
 <p>
   <slot></slot>
 </p>
@@ -44,7 +44,7 @@ default-slot.vue:
 
 demo-slot.vue:
 
-```html
+``` html
 <default-slot>hello slot</default-slot>
 <default-slot>
   <strong>any</strong> <span>content</span>
@@ -53,7 +53,7 @@ demo-slot.vue:
 
 渲染出的 HTML：
 
-```html
+``` html
 <p>hello slot</p>
 <p>
   <strong>any</strong> <span>content</span>
@@ -68,7 +68,7 @@ demo-slot.vue:
 
 default-content.vue:
 
-```html
+``` html
 <p>
   <slot>component default content</slot>
 </p>
@@ -76,13 +76,13 @@ default-content.vue:
 
 demo-slot.vue:
 
-```html
+``` html
 <default-content></default-content>
 ```
 
 渲染出的 HTML：
 
-```html
+``` html
 <p>component default content</p>
 ```
 
@@ -92,7 +92,7 @@ demo-slot.vue:
 
 named-slot.vue:
 
-```html
+``` html
 <div class="page-layout">
   <header>
     <slot name="header"></slot>
@@ -108,7 +108,7 @@ named-slot.vue:
 
 demo-slot.vue:
 
-```html
+``` html
 <named-slot>
   <template
       v-slot:header>
@@ -135,7 +135,7 @@ demo-slot.vue:
 
 渲染出的 HTML：
 
-```html
+``` html
 <div class="page-layout">
   <header>
     <span>page header</span>
@@ -175,7 +175,7 @@ demo-slot.vue:
 
 slot-props.vue:
 
-```vue
+``` vue
 <template>
   <div class="slot-props">
     <slot
@@ -200,7 +200,7 @@ export default {
 
 demo-slot.vue:
 
-```html
+``` html
 <child-data>
   <template
       #default="slotProps">
@@ -214,7 +214,7 @@ demo-slot.vue:
 
 `slotProps` 代表了子组件中绑定到 `<slot>` 上的 props，`data` 是其中的一个属性。也可以用解构语法编写：
 
-```html
+``` html
 <template
     #default="{
       data,

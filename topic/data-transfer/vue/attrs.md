@@ -1,4 +1,4 @@
-# 非 props 的 Attribute
+# 透传 Attribute
 
 如果向组件传递一个属性，但它没有对应 props 或自定义事件，那该属性就是非 props 的 attribute。常见的例子有 `id` `class` 和 `style` 属性。
 
@@ -8,10 +8,11 @@
 
 + 传入的 `class` 和 `style` 值会和根节点已有的值合并。
 + 绑定的事件处理方法也会应用到根节点元素上。
++ 如果根节点已经绑定了对应的事件处理方法，两处都会被触发。
 
 single-root.vue:
 
-```vue
+``` vue
 <template>
   <div class="single-root">single-root-component</div>
 </template>
@@ -28,7 +29,7 @@ export default {
 
 demo-attrs.vue:
 
-```html
+``` html
 <template>
   <single-root
       attrA="A"
@@ -60,7 +61,7 @@ export default {
 
 渲染出的 HTML：
 
-```html
+``` html
 <div
     class="single-root y"
     attrb="B"
@@ -79,7 +80,7 @@ export default {
 
 在组件中，可以使用 `this.$attrs` 访问传入的非 props attribute：
 
-```js
+``` ts
 mounted() {
   console.log(this.$attrs);
 },
@@ -101,7 +102,7 @@ mounted() {
 
 可以在组件选项中关闭非 props attribute 的继承：
 
-```js
+``` ts
 {
   inheritAttrs: false,
 }
@@ -117,7 +118,7 @@ mounted() {
 
 multiple-root.vue:
 
-```html
+``` html
 <template>
   <div
       class="root-a">root-a</div>
@@ -126,6 +127,8 @@ multiple-root.vue:
       v-bind="$attrs">root-b</div>
 </template>
 ```
+
+`v-bind="object"` 会将一个对象的所有属性都作为 attribute 应用到元素或组件上。
 
 ## 最终代码
 

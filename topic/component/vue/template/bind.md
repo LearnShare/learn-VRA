@@ -6,7 +6,7 @@
 
 ## v-bind:attr (:attr)
 
-```vue
+``` vue
 <template>
   <h2>2. attr/class/style</h2>
   <button
@@ -48,7 +48,7 @@ export default {
 
 渲染出的 HTML:
 
-```html
+``` html
 <h2>2. attr</h2>
 <button id="button-id" disabled="">Submit</button>
 <button class="large">Button</button>
@@ -99,8 +99,6 @@ v-bind:[key]="value"
 ## 最终代码
 
 Github: <https://github.com/LearnShare/vra-vue/tree/03.template>
-
-在线预览: <https://codesandbox.io/s/vra-vue-03-template-lqm4l>
 
 ## 继续阅读
 

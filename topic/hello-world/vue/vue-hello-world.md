@@ -22,7 +22,7 @@
 2. 修改 src/app.vue
   ```vue
   <template>
-    <HelloWorld msg="Hello World from Vue"/>
+    <hello-world msg="Hello World from Vue" />
   </template>
 
   <script>
@@ -38,14 +38,18 @@
   ```
 3. 精简 src/main.js
   ```js
-  import { createApp } from 'vue';
-  import App from './app.vue';
+  import { createApp } from 'vue'
 
-  createApp(App).mount('#app');
+  import App from './app.vue'
+
+  const app = createApp(App)
+
+  app.mount('#app')
   ```
 4. 删除不相关的文件和目录
   ```
-  public/favicon.ico
+  public/
+  src/components/ (hello-world.vue 以外的文件)
   src/assets/
   src/router/
   src/store/
@@ -55,8 +59,6 @@
 ## 最终代码
 
 Github: <https://github.com/LearnShare/vra-vue/tree/01.hello-world>
-
-在线预览: <https://codesandbox.io/s/vra-vue-01hello-world-wdlpk>
 
 ## 继续阅读
 

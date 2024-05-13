@@ -2,7 +2,7 @@
 
 了解过前面的内容之后，我们已经可以在单个元素上绑定显示数据，并根据事件更新该数据：
 
-```vue
+``` vue
 <template>
   <h1>Form</h1>
   <h2>1. bind/event</h2>
@@ -12,12 +12,12 @@
   <input
       type="text"
       :value="textValue"
-      @input="updateText">
+      @input="updateText" />
   <p>checked: {{ checked }}</p>
   <input
       type="checkbox"
       :checked="checked"
-      @change="updateChecked">
+      @change="updateChecked" />
 </template>
 
 <script>
@@ -54,7 +54,7 @@ Vue 中添加了 `v-model` 指令，用于简化数据绑定和事件监听。
 
 `v-model` 指令可以为表单元素创建数据的双向绑定：
 
-```vue
+``` vue
 <template>
   <h1>Form</h1>
   <h2>2. model</h2>
@@ -75,21 +75,21 @@ Vue 中添加了 `v-model` 指令，用于简化数据绑定和事件监听。
     <label>
       <span>textarea</span>
       <textarea
-          v-model="form.comment"></textarea>
+          v-model="form.comment" />
     </label>
     <h3>date</h3>
     <label>
       <span>date</span>
       <input
           type="date"
-          v-model="form.date">
+          v-model="form.date" />
     </label>
     <h3>checkbox/radio & group</h3>
     <label>
       <span>checkbox</span>
       <input
           type="checkbox"
-          v-model="form.rememberMe">
+          v-model="form.rememberMe" />
     </label>
     <label>
       <span>checkbox group</span>
@@ -99,7 +99,7 @@ Vue 中添加了 `v-model` 指令，用于简化数据绑定和事件监听。
         <input
             type="checkbox"
             :value="option"
-            v-model="form.groups">
+            v-model="form.groups" />
         <span>{{ option }}</span>
       </div>
     </label>
@@ -111,7 +111,7 @@ Vue 中添加了 `v-model` 指令，用于简化数据绑定和事件监听。
         <input
             type="radio"
             :value="option"
-            v-model="form.group">
+            v-model="form.group" />
         <span>{{ option }}</span>
       </div>
     </label>
@@ -165,8 +165,6 @@ export default {
 ## 最终代码
 
 Github: <https://github.com/LearnShare/vra-vue/tree/05.form>
-
-在线预览: <https://codesandbox.io/s/vra-vue-05-form-lzx1t>
 
 ## 继续阅读
 
