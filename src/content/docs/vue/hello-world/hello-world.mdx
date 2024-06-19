@@ -1,0 +1,72 @@
+---
+title: Hello World
+---
+
+import {
+  Steps,
+} from '@astrojs/starlight/components';
+
+## 编写最小化的 Hello World
+
+在上一节完成的代码基础上进行修改：
+
+<Steps>
+1. 精简
+
+    ``` vue title="src/components/hello-world.vue"
+    <template>
+      <h1>{{ msg }}</h1>
+    </template>
+
+    <script>
+    export default {
+      name: 'HelloWorld',
+      props: {
+        msg: String,
+      },
+    };
+    </script>
+    ```
+
+2. 修改
+
+    ``` vue title="src/app.vue"
+    <template>
+      <hello-world msg="Hello World from Vue" />
+    </template>
+
+    <script>
+    import HelloWorld from '@/components/hello-world.vue';
+
+    export default {
+      name: 'App',
+      components: {
+        HelloWorld,
+      },
+    };
+    </script>
+    ```
+
+3. 精简
+
+    ``` ts title="src/main.ts"
+    import { createApp } from 'vue';
+
+    import App from './app.vue';
+
+    const app = createApp(App);
+
+    app.mount('#app');
+    ```
+
+4. 删除不相关的文件和目录
+
+    ```
+    public/
+    src/components/ (hello-world.vue 以外的文件)
+    src/assets/
+    src/router/
+    src/store/
+    src/views/
+    ```
+</Steps>

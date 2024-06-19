@@ -1,0 +1,36 @@
+---
+title: SCSS
+---
+
+import {
+  Steps,
+} from '@astrojs/starlight/components';
+
+<Steps>
+
+1. 安装 dart-sass：
+
+    ``` sh
+    pnpm i -D sass
+    ```
+
+2. 添加文件 `components/hello-world.scss`:
+
+    ``` scss
+    h1 {
+      color: red;
+    }
+    ```
+
+3. 在 `hello-world.vue` 末尾添加下面的代码：
+
+    ``` vue ins={1-4}
+    <style
+        scoped
+        lang="scss"
+        src="./hello-world.scss"></style>
+    ```
+
+4. 运行并检查页面，文字应当显示为红色。
+
+</Steps>

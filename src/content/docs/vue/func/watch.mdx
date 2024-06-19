@@ -1,0 +1,175 @@
+---
+title: watch
+---
+
+参考内容：
+
++ [Vue API: watch](https://v3.cn.vuejs.org/api/options-data.html#watch)
++ [Vue API: $watch](https://v3.cn.vuejs.org/api/instance-methods.html#watch)
+
+Vue 提供了 [computed](../../data/computed)，用于完成数据的自动跟踪和处理。但它是自动执行的，而且不能有副作用。
+
+`watch` 提供了监听数据变化和执行自定义操作的功能。
+
+``` vue "number"
+<template>
+  <h2>watch</h2>
+  <div>汉堡: {{ number }}</div>
+  <div>
+    <button
+        @click="order(-1)">-1</button>
+    <button
+        @click="order(1)">+ 1</button>
+  </div>
+  <p
+      class="error"
+      v-if="alert">会不会太多了？</p>
+</template>
+
+<script>
+export default {
+  name: 'DemoFunc',
+  data() {
+    return {
+      number: 0,
+      alert: false,
+    };
+  },
+  watch: {
+    number(newValue) {
+      this.alert = newValue >= 3;
+    },
+  },
+  methods: {
+    order(value) {
+      if (value === -1
+          && this.number <= 0) {
+        return;
+      }
+
+      this.number += value;
+    },
+  },
+};
+</script>
+```
+
+在这个例子中，我们监听了 `number` 的变化。如果它的值 `>= 3`，就呈现红色的提示文字。
+
+## watch - 定义数据监听
+
+`watch` 类似于 `methods` 选项，它是一个包含监听方法的对象。
+
+可以监听 `data` `props` 和 `computed` 中的数据，当数据发生变化时执行对应的方法：
+
+``` ts
+watch: {
+  // 监听单个数据
+  // newValue: 变化后的值
+  // oldValue: 变化前的值
+  key1(newValue, oldValue) {
+    //
+  },
+  // 监听对象属性
+  'key2.subKey'(newValue, oldValue) {
+    //
+  },
+  // 执行指定方法
+  key3: funName,
+  // 执行多个方法
+  key4: [
+    funcName,
+    (newValue, oldValue) {
+      //
+    },
+  ],
+  // 更多配置选项
+  key5: {
+    handler(newValue, oldValue) {
+      //
+    },
+    // 是否深入检查对象属性或数组成员的变化
+    deep: false,
+    // 是否立即执行
+    immediate: false,
+    // 选择执行的时机
+    // pre: 渲染前执行
+    // post: 渲染后执行
+    // sync: 同步执行
+    flush: 'pre',
+  },
+},
+```
+
+**注意**：默认情况下，`watch` 方法无法监听对象属性或数组成员的变化，需要启用 `deep` 选项。
+
+## $watch() - 设置和取消监听
+
+Vue 提供了组件实例方法 `this.$watch()`，也可以用来定义数据监听方法。
+
+与 `watch` 选项不同的是，`$watch()` 方法可以灵活地设置和取消监听。
+
+``` ts
+// 监听单个数据
+this.$watch('key1',
+  (newValue, oldValue) {
+    //
+  }, {
+    // 配置选项
+  },
+);
+// 监听对象属性
+this.$watch(
+  () => this.key2.subKey,
+  (newValue, oldValue) {
+    //
+  },
+);
+// 监听表达式
+this.$watch(
+  () => this.key3 + this.key4,
+  (newValue, oldValue) {
+    //
+  },
+);
+```
+
+`$watch()` 方法会返回一个的方法，可以用来取消这个监听：
+
+``` ts
+const unwatch = this.$watch();
+
+unwatch();
+```
+
+## 真的需要手动监听吗？
+
+对于上面的例子，我们可以通过 `computed` 方法自动完成：
+
+``` ts "number"
+export default {
+  name: 'DemoFunc',
+  data() {
+    return {
+      number: 0,
+    };
+  },
+  computed: {
+    alert() {
+      return this.number >= 3;
+    },
+  },
+  methods: {
+    order(value) {
+      if (value === -1
+          && this.number <= 0) {
+        return;
+      }
+
+      this.number += value;
+    },
+  },
+};
+```
+
+对于能够自动完成的数据处理逻辑，使用 `computed` 会更合适。`watch` 更适合执行一些副作用，如触发事件或调用接口。

@@ -1,0 +1,111 @@
+---
+title: HTML
+sidebar:
+  order: 2
+---
+
++ https://www.w3.org/TR/html/
++ https://html.spec.whatwg.org/
+
+## 语义化
+
++ 标签名、属性名和属性值的使用需要符合其语义
++ 使用有意义的 id 和 class 名称（英文单词为主），并尽量简短（避免使用 `ad` 等关键词，会被去广告插件屏蔽）
+
+## 可访问性
+
+[TODO]
+
+## DOCTYPE
+
+``` html
+<!DOCTYPE html>
+```
+
+## lang
+
+为 html 元素提供 lang 属性，表明当前内容的语言。
+
+``` html
+<html lang="en"></html>
+```
+
+## meta
+
++ charset="UTF-8"
+
+``` html
+<meta charset="UTF-8">
+```
+
+## 元素
+
++ 使用小写标签名
++ 编写成对标签的结束标签
++ 省略空元素的结束标记 `/`
++ 正确嵌套成对的标签
++ 减少不必要的元素和嵌套层级
+
+``` html
+<h1></h1>
+
+<img src="">
+
+<ul>
+  <li>1</li>
+  <li>2</li>
+</ul>
+```
+
+## 换行和缩进
+
++ 每个块级元素、列表项和表格元素独占一行
++ 包含子元素的元素，其开始标签和结束标签均独占一行
++ 每级子元素缩进两个空格
++ 行内文本元素可以和其他文本放在同一行
+
+``` html
+<section>
+  <h2>title</h2>
+  <p>content</p>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+  </ul>
+</section>
+
+<p><em>注意</em>这里</p>
+```
+
+## 属性
+
++ 使用小写字母作为属性名
++ 使用双引号 `""` 包含属性值
++ 属性值关键词使用小写字母
++ 使用 `-` 连接属性名、id 和 class 名称中的单词
+
+``` html
+<button title="Send Message">OK</button>
+
+<input type="radio" value="true">
+```
+
+当属性较多时，使用换行和缩进提高可读性。
+
+1. 在开始标签名后换行
+2. 使用四个空格缩进后续内容
+3. 将开始标签的 `>` 放在最后一个属性之后
+
+``` html
+<input
+    type="text"
+    name="username"
+    placeholder="Your username or email address">
+```
+
+*注意*：不要在文本内容中使用换行。
+
+## 超链接
+
++ 使用超链接实现页面和锚点跳转，而非其他元素的点击事件
++ 禁止阻止超链接的点击事件

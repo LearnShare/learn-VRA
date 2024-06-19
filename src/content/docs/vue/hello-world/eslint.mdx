@@ -1,0 +1,29 @@
+---
+title: ESLint
+---
+
+创建项目时应当已经选择并支持了 ESLint。
+
+## 安装 Airbnb 规则
+
+``` sh
+pnpm i -D eslint-config-airbnb-base
+```
+
+## 更新 .eslintrc.cjs
+
+``` js ins={2} {5-6}
+  extends: [
+    'airbnb-base',
+  ],
+  rules: {          // 根据项目风格，设置合适的规则
+    'import/no-unresolved': 'off',
+    'import/no-extraneous-dependencies': 'off',
+  },
+```
+
+## 运行 ESLint
+
+运行 `pnpm run lint`，并根据运行结果修改代码中的问题，或调整 ESLint 规则。
+
+可以运行 `pnpm run lint --fix` 自动修复部分问题。

@@ -1,0 +1,272 @@
+---
+title: CSS
+---
+
+## 内联样式
+
+避免内联样式。
+
+## *、全局样式、reset 和覆盖
+
++ 避免未经慎重考虑的 *、全局样式、reset 和覆盖
++ 严格限制样式的作用范围
+
+## @charset
+
+``` css
+@charset "UTF-8";
+```
+
+## 双引号
+
+在需要的地方使用双引号 `""`
+
+``` css
+@charset "UTF-8";
+
+@import "./theme/default.css";
+
+i[class^="icon-"] {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#target::after {
+  content: "+";
+  background-image: url("../images/bg.png");
+}
+```
+
+## 换行和缩进
+
++ 每条选择器、属性声明独占一行
++ 在每个 `{` `,` `;` `}` 之后换行
++ `{` 前保留一个空格，并始终放在最后一条选择器之后
++ 属性声明缩进两个空格
++ 当存在多组属性值时，每组独占一行，第二行及以后的值缩进四个空格
++ @media 中的内容向内缩进两个空格
++ 当 @media 有多个条件时，每个条件独占一行。在逻辑关键词前和 `,` 之后换行，第二行及以后的值缩进四个空格
++ 关联的样式规则（如父元素和子元素）从外到内顺序编写，中间不添加空行
++ 无关的样式规则之前保留一个空行
+
+``` css
+h2,
+article p {
+  line-height: 1.6;
+  color: #333;
+}
+
+.box {
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+      0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+      0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 400px) {
+  h2 {
+    color: #333;
+  }
+}
+
+@media (max-width: 400px),
+    (orientation: landscape)
+    and (max-width: 800px) {
+  h2 {
+    color: #333;
+  }
+}
+
+header {
+  background-color: #EEE;
+}
+header nav {
+  user-select: none;
+}
+
+article {
+  margin: 0 auto;
+  width: 800px;
+}
+```
+
+## 选择器
+
++ 缩小匹配范围，明确匹配目标。避免污染其他元素
++ 避免多余的选择器叠加和嵌套
++ 关系选择器相邻的选择器和符号之间保留一个空格
++ 减少关系选择器的嵌套层级（尽量保持在三级以内）
++ 使用 `:` 标记伪类，`::` 标记伪元素
+
+``` css
+#target {}
+
+a b {}
+a > b {}
+a + b {}
+a ~ b {}
+
+li:fist-child {}
+h2::after {}
+```
+
+## 属性
+
++ 尽量使用简写属性
++ 先写带前缀的属性（尽量使用第三方工具（如 [Autoprefixer](https://github.com/postcss/autoprefixer)）自动添加前缀）
++ 每一个属性名后均使用 `:` 和一个空格
++ 每一条属性声明后均使用 `;` 结尾
+
+``` css
+#target {
+  font: 16px bold monaco, sans-serif;
+}
+
+.card {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+```
+
+<details>
+<summary>按固定顺序编写多个属性：</summary>
++ content
++ 盒模型
+  + display
+  + box-sizing
+  + margin
+  + border
+  + border-radius
+  + padding
+  + width
+  + min-width
+  + max-width
+  + height
+  + min-height
+  + max-height
+  + overflow
++ 弹性盒模型
+  + 弹性容器
+    + flex-direction
+    + flex-wrap
+    + flex-flow
+    + justify-content
+    + align-content
+    + align-items
+    + align-self
+  + 弹性子元素
+    + order
+    + flex
+    + flex-grow
+    + flex-shrink
+    + flex-basis
++ 定位
+  + position
+  + top
+  + right
+  + bottom
+  + left
+  + z-index
++ 浮动
+  + float
+  + clear
++ 装饰性样式
+  + 边框背景图
+    + border-image
+    + border-image-source
+    + border-image-slice
+    + border-image-width
+    + border-image-outset
+    + border-image-repeat
+  + 轮廓
+    + outline
+    + outline-width
+    + outline-color
+    + outline-style
+    + outline-offset
+  + 圆角
+    + border-radius
+    + border-top-left-radius
+    + border-top-right-radius
+    + border-bottom-right-radius
+    + border-bottom-left-radius
+  + 背景
+    + background
+    + background-image
+    + background-position
+    + background-size
+    + background-repeat
+    + background-attachment
+    + background-origin
+    + background-clip
+    + background-color
+  + box-shadow
+  + opacity
++ 元素特定属性
+  + 列表
+    + list-style
+    + list-style-type
+    + list-style-position
+    + list-style-image
+  + 表格
+    + caption-side
+    + border-collapse
+    + border-spacing
+    + empty-cells
++ 字体和文本
+  + 字体
+    + font
+    + font-family
+    + font-size
+    + font-style
+    + font-weight
+    + line-height
+  + 文本
+    + direction
+    + letter-spacing
+    + word-spacing
+    + white-space
+    + word-break
+    + text-align
+    + text-justify
+    + text-indent
+    + text-transform
+    + text-overflow
+    + word-wrap
+    + user-select
+  + 装饰性样式
+    + color
+    + text-decoration
+    + text-shadow
++ transform
++ 过渡
+  + transition
+  + transition-property
+  + transition-duration
+  + transition-timing-function
+  + transition-delay
++ 动画
+  + animation
+  + animation-name
+  + animation-duration
+  + animation-timing-function
+  + animation-iteration-count
+  + animation-direction
+  + animation-play-state
+  + animation-fill-mode
++ 其他
+  + visibility
+  + resize
+  + cursor
+  + filter
+  + vertical-align
+</details>
+
+## 值
+
++ 值为 0 时，省略单位（`0px` -> `0`）
++ 值为 -1~1 之间的小数时，省略 0（`0.5s` -> `.5s`）
++ RGB 颜色值中使用大写字母
++ 使用 #RGB 替代 #RRGGBB
++ rgb() 和 rgba() 中，每个 `,` 之后保留一个空格

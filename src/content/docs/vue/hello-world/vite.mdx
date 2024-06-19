@@ -1,0 +1,46 @@
+---
+title: Vite
+---
+
+[Vite](https://cn.vitejs.dev/) 是官方推荐的开发工具，它的特点有：
+
++ [广泛支持](https://github.com/vitejs/vite/tree/main/packages/create-vite) Vue、React 等框架和库
++ 基于 ESM，更快的冷启动和热更新
+
+:::caution
+Vue CLI 已经处于维护状态，不推荐在新项目中继续使用。
+:::
+
+## 创建项目
+
+``` sh
+pnpm create vue
+
+# 或使用 Vite 创建
+# pnpm create vite
+```
+
+根据提示，按需求选择项目配置：
+
+1. 项目名称: vra-vue
+2. 是否使用 TypeScript: Yes
+3. 是否添加 JSX 支持: No
+4. 是否添加 Vue Router: Yes
+5. 是否使用 Pinia 作为状态管理库: Yes
+6. 是否使用 Vitest 作为单元测试库: Yes
+7. 选择一个端到端测试方案: Playwrite
+8. 是否添加 Vue 开发工具: Yes
+
+## 运行和预览
+
+``` sh
+cd vra-vue
+pnpm install
+pnpm run dev
+```
+
+在浏览器中访问 http://localhost:5173/ 即可。
+
+## 项目配置文件
+
+参考 [配置 Vite](https://cn.vitejs.dev/config/)。
