@@ -1,0 +1,28 @@
+---
+title: API 风格
+---
+
+Vue 当前版本提供了两种完全不同的 [API](https://cn.vuejs.org/api/) [风格](https://cn.vuejs.org/guide/introduction.html#api-styles)：
+
++ 选项式 API
++ 组合式 API
+
+## 选项式 (Options) API
+
+>自 Vue 诞生时就存在的 API 风格，当前版本（3.*）仍然支持，但选择组合式风格的用户会更多一些。
+
+组件的数据和逻辑（甚至是模板）都是选项对象里的参数，它们会暴露在 `this`（指向当前组件实例） 上，可以在模板及函数内使用。
+
+参考 [组件 - 组件配置](/vue/component/#组件配置)。
+
+:::note
+本教程的前半部分仍然以选项式 API 编写，后半部分会完全切换为组合式风格。
+:::
+
+## 组合式 (Composition) API
+
+Vue 3 中推出的全新 API 风格（[Vue 2.7 也支持了同样的 API](https://v2.cn.vuejs.org/v2/guide/migration-vue-2-7.html)）
+
+参考 [组合式 API]。
+
+## 选择

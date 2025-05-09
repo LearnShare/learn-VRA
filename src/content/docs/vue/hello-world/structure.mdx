@@ -8,7 +8,7 @@ import {
 
 ## 项目结构
 
-在[上一节](./vite)中，我们创建并运行了 `vra-vue` 项目。
+在[上一节](../vite/)中，我们创建并运行了 `vra-vue` 项目。
 
 来看一下项目的结构：
 
@@ -39,17 +39,36 @@ vra-vue/
   vitest.config.ts      // Vitest 配置文件
 ```
 
+## 路径别名
+
+Vite 已经提供了名为 `@` 的路径别名，并将它映射到 `src` 路径：
+
+``` ts title="vite.config.ts"
+alias: {
+  '@': fileURLToPath(new URL('./src', import.meta.url)),
+},
+```
+
+因此，我们可以使用路径别名简化路径的书写，例如：
+
+``` ts
+// 使用别名
+import Button from '@/components/button/index.vue';
+```
+
 ## 代码风格调整
 
-为了符合 [代码风格](../development-environment.md#代码风格) 的要求，进行如下调整：
+为了符合 [代码风格](/coding-style-guides/) 的要求，进行如下调整：
 
 <Steps>
 1. 修改文件名及相关代码
 
+    ```
     1. 路径及文件名使用小写字母和 `-`
     2. 省略路径和文件名重复的部分（如 `views/HomeView.vue` -> `views/home.vue`）
+    ```
 
-2. 在根目录创建 .editorconfig 文件
+2. 在根目录创建 `.editorconfig` 文件
 
     ``` editorconfig title=".editorconfig"
     root = true

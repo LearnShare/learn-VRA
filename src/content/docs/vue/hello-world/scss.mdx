@@ -6,9 +6,10 @@ import {
   Steps,
 } from '@astrojs/starlight/components';
 
-<Steps>
+Vite 已经内置了对 [CSS 预处理器](https://cn.vitejs.dev/guide/features.html#css-pre-processors)的支持，只需要安装相关的依赖即可：
 
-1. 安装 dart-sass：
+<Steps>
+1. 安装 [Dart Sass](https://www.npmjs.com/package/sass)：
 
     ``` sh
     pnpm i -D sass
@@ -16,7 +17,7 @@ import {
 
 2. 添加文件 `components/hello-world.scss`:
 
-    ``` scss
+    ``` scss title="components/hello-world.scss"
     h1 {
       color: red;
     }
@@ -24,13 +25,12 @@ import {
 
 3. 在 `hello-world.vue` 末尾添加下面的代码：
 
-    ``` vue ins={1-4}
+    ``` vue title="hello-world.vue" ins={1-4}
     <style
         scoped
         lang="scss"
         src="./hello-world.scss"></style>
     ```
 
-4. 运行并检查页面，文字应当显示为红色。
-
+4. 运行并检查页面，文字应当显示为**红色**。
 </Steps>
